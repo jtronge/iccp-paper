@@ -1,0 +1,142 @@
+{
+    "state_changes": [
+        {
+            "task_id": "bc4b68ab-dcf3-442a-a204-9600ab451bcd",
+            "task_name": "makeblastdb",
+            "next_state": "PENDING",
+            "timestamp": 1617286616
+        },
+        {
+            "task_id": "bc4b68ab-dcf3-442a-a204-9600ab451bcd",
+            "task_name": "makeblastdb",
+            "next_state": "RUNNING",
+            "timestamp": 1617286616
+        },
+        {
+            "task_id": "bc4b68ab-dcf3-442a-a204-9600ab451bcd",
+            "task_name": "makeblastdb",
+            "next_state": "COMPLETED",
+            "timestamp": 1617286635
+        },
+        {
+            "task_id": "23893543-e2bc-4c87-b54c-57acd97a781c",
+            "task_name": "worker0",
+            "next_state": "PENDING",
+            "timestamp": 1617286642
+        },
+        {
+            "task_id": "23893543-e2bc-4c87-b54c-57acd97a781c",
+            "task_name": "worker0",
+            "next_state": "RUNNING",
+            "timestamp": 1617286642
+        },
+        {
+            "task_id": "1b3d45f1-6cd8-4e98-9c2f-97bcc255ea76",
+            "task_name": "worker1",
+            "next_state": "PENDING",
+            "timestamp": 1617286644
+        },
+        {
+            "task_id": "1b3d45f1-6cd8-4e98-9c2f-97bcc255ea76",
+            "task_name": "worker1",
+            "next_state": "RUNNING",
+            "timestamp": 1617286645
+        },
+        {
+            "task_id": "23893543-e2bc-4c87-b54c-57acd97a781c",
+            "task_name": "worker0",
+            "next_state": "COMPLETED",
+            "timestamp": 1617286655
+        },
+        {
+            "task_id": "1b3d45f1-6cd8-4e98-9c2f-97bcc255ea76",
+            "task_name": "worker1",
+            "next_state": "COMPLETED",
+            "timestamp": 1617286660
+        }
+    ],
+    "scheduling_results": [
+        {
+            "tasks": [
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "bc4b68ab-dcf3-442a-a204-9600ab451bcd",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                }
+            ],
+            "resources": [
+                {
+                    "id_": "localhost:6700",
+                    "nodes": 1
+                },
+                {
+                    "id_": "localhost:5055",
+                    "nodes": 1
+                }
+            ],
+            "allocations": {
+                "bc4b68ab-dcf3-442a-a204-9600ab451bcd": [
+                    {
+                        "id_": "localhost:6700",
+                        "start_time": 0,
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                ]
+            },
+            "timestamp": 1617286613
+        },
+        {
+            "tasks": [
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "23893543-e2bc-4c87-b54c-57acd97a781c",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "1b3d45f1-6cd8-4e98-9c2f-97bcc255ea76",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                }
+            ],
+            "resources": [
+                {
+                    "id_": "localhost:6700",
+                    "nodes": 1
+                },
+                {
+                    "id_": "localhost:5055",
+                    "nodes": 1
+                }
+            ],
+            "allocations": {
+                "23893543-e2bc-4c87-b54c-57acd97a781c": [
+                    {
+                        "id_": "localhost:6700",
+                        "start_time": 0,
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                ],
+                "1b3d45f1-6cd8-4e98-9c2f-97bcc255ea76": [
+                    {
+                        "id_": "localhost:5055",
+                        "start_time": 0,
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                ]
+            },
+            "timestamp": 1617286635
+        }
+    ]
+}

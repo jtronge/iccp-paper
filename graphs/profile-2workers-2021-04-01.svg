@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500">
+<g transform="None">
+<text x="200" y="30" style="font-size:20pt;">Blast Workflow 1 Task Execution Time</text>
+<g transform="translate(120 320)">
+<text x="0" y="20" style="">PENDING</text>
+<rect x="84" y="0" width="40" height="40" fill="#ff0000">
+</rect>
+<text x="150" y="20" style="">RUNNING</text>
+<rect x="234" y="0" width="40" height="40" fill="#0000ff">
+</rect>
+</g>
+<g transform="translate(0 50)">
+<text x="10" y="35" style="">makeblastdb</text>
+<text x="10" y="95" style="">worker0</text>
+<text x="10" y="155" style="">worker1</text>
+<g transform="translate(100 0)">
+<rect x="10" y="10" width="0" height="50" fill="#ff0000">
+</rect>
+<rect x="10" y="10" width="246" height="50" fill="#0000ff">
+</rect>
+<rect x="346" y="70" width="0" height="50" fill="#ff0000">
+</rect>
+<rect x="346" y="70" width="168" height="50" fill="#0000ff">
+</rect>
+<rect x="372" y="130" width="12" height="50" fill="#ff0000">
+</rect>
+<rect x="385" y="130" width="194" height="50" fill="#0000ff">
+</rect>
+<g transform="translate(0 200)">
+<path d="M10,0 L580,0" stroke="#000000"></path>
+<path d="M10.0,0 L10.0,6" stroke="#000000"></path><text x="6" y="20" style="font-size: 10pt">0</text>
+<path d="M67.00000123544173,0 L67.00000123544173,6" stroke="#000000"></path><text x="63" y="20" style="font-size: 10pt">4</text>
+<path d="M123.99999938227913,0 L123.99999938227913,6" stroke="#000000"></path><text x="119" y="20" style="font-size: 10pt">8</text>
+<path d="M181.00000061772087,0 L181.00000061772087,6" stroke="#000000"></path><text x="177" y="20" style="font-size: 10pt">13</text>
+<path d="M237.99999876455826,0 L237.99999876455826,6" stroke="#000000"></path><text x="233" y="20" style="font-size: 10pt">17</text>
+<path d="M295.0,0 L295.0,6" stroke="#000000"></path><text x="291" y="20" style="font-size: 10pt">22</text>
+<path d="M352.00000123544174,0 L352.00000123544174,6" stroke="#000000"></path><text x="348" y="20" style="font-size: 10pt">26</text>
+<path d="M408.99999938227916,0 L408.99999938227916,6" stroke="#000000"></path><text x="404" y="20" style="font-size: 10pt">30</text>
+<path d="M466.00000061772084,0 L466.00000061772084,6" stroke="#000000"></path><text x="462" y="20" style="font-size: 10pt">35</text>
+<path d="M522.9999987645583,0 L522.9999987645583,6" stroke="#000000"></path><text x="518" y="20" style="font-size: 10pt">39</text>
+<text x="200" y="40" style="">Execution time (s)</text>
+</g>
+</g>
+</g>
+</g>
+</svg>
+

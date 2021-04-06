@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400">
+<g transform="translate(10 80)">
+<text x="100" y="0" style="">Nodes</text>
+<text x="0" y="48" style="font-weight:bold;">Chameleoncloud -- node-0</text>
+<text x="0" y="128" style="font-weight:bold;">Google Compute Engine -- node-0</text>
+<g transform="translate(250 0)">
+<rect x="20" y="20" width="336" height="70" fill="#000033">
+</rect>
+<text x="132" y="58" style="font-size:14pt;fill:#FFFFFF;">makeblastdb</text>
+<rect x="480" y="20" width="230" height="70" fill="#000088">
+</rect>
+<text x="557" y="58" style="font-size:14pt;fill:#FFFFFF;">worker0</text>
+<rect x="534" y="100" width="265" height="70" fill="#0000CC">
+</rect>
+<text x="622" y="138" style="font-size:14pt;fill:#FFFFFF;">worker1</text>
+<g transform="translate(0 200)">
+<path d="M20,0 L800,0" stroke="#000000"></path>
+<path d="M20.0,0 L20.0,6" stroke="#000000"></path><text x="16" y="20" style="font-size: 10pt">0s</text>
+<path d="M85.00000140883705,0 L85.00000140883705,6" stroke="#000000"></path><text x="81" y="20" style="font-size: 10pt">3s</text>
+<path d="M149.99999859116295,0 L149.99999859116295,6" stroke="#000000"></path><text x="145" y="20" style="font-size: 10pt">7s</text>
+<path d="M215.0,0 L215.0,6" stroke="#000000"></path><text x="211" y="20" style="font-size: 10pt">11s</text>
+<path d="M280.000001408837,0 L280.000001408837,6" stroke="#000000"></path><text x="276" y="20" style="font-size: 10pt">14s</text>
+<path d="M344.999998591163,0 L344.999998591163,6" stroke="#000000"></path><text x="340" y="20" style="font-size: 10pt">18s</text>
+<path d="M410.0,0 L410.0,6" stroke="#000000"></path><text x="406" y="20" style="font-size: 10pt">22s</text>
+<path d="M475.000001408837,0 L475.000001408837,6" stroke="#000000"></path><text x="471" y="20" style="font-size: 10pt">25s</text>
+<path d="M539.9999985911629,0 L539.9999985911629,6" stroke="#000000"></path><text x="535" y="20" style="font-size: 10pt">29s</text>
+<path d="M605.0,0 L605.0,6" stroke="#000000"></path><text x="601" y="20" style="font-size: 10pt">33s</text>
+<path d="M670.0000014088371,0 L670.0000014088371,6" stroke="#000000"></path><text x="666" y="20" style="font-size: 10pt">36s</text>
+<path d="M734.9999985911629,0 L734.9999985911629,6" stroke="#000000"></path><text x="730" y="20" style="font-size: 10pt">40s</text>
+</g>
+</g>
+</g>
+<text x="400" y="40" style="font-size:20pt;">Task Node Execution</text>
+</svg>
+
