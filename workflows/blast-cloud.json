@@ -1,0 +1,261 @@
+{
+    "makeblastdb": {
+        "workdir": "/home/cc",
+        "push": [
+            "databases"
+        ],
+        "pull": [
+            "carAur01.sm.fa"
+        ]
+    },
+    "task-NC_009066-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009066-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009066.fasta"
+        ]
+    },
+    "task-NC_009063-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009063-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009063.fasta"
+        ]
+    },
+    "task-NC_013564-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_013564-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_013564.fasta"
+        ]
+    },
+    "task-NC_018814-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_018814-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_018814.fasta"
+        ]
+    },
+    "task-NC_009062-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009062-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009062.fasta"
+        ]
+    },
+    "task-NC_011168-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_011168-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_011168.fasta"
+        ]
+    },
+    "task-NC_011177-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_011177-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_011177.fasta"
+        ]
+    },
+    "task-NC_013750-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_013750-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_013750.fasta"
+        ]
+    },
+    "task-NC_009065-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009065-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009065.fasta"
+        ]
+    },
+    "task-NC_009060-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009060-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009060.fasta"
+        ]
+    },
+    "task-NC_009057-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009057-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009057.fasta"
+        ]
+    },
+    "task-NC_009059-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009059-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009059.fasta"
+        ]
+    },
+    "task-NC_011169-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_011169-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_011169.fasta"
+        ]
+    },
+    "task-NC_011170-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_011170-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_011170.fasta"
+        ]
+    },
+    "task-NC_011171-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_011171-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_011171.fasta"
+        ]
+    },
+    "task-NC_009459-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009459-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009459.fasta"
+        ]
+    },
+    "task-NC_018815-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_018815-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_018815.fasta"
+        ]
+    },
+    "task-NC_009058-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009058-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009058.fasta"
+        ]
+    },
+    "task-NC_010205-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_010205-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_010205.fasta"
+        ]
+    },
+    "task-NC_009067-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009067-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009067.fasta"
+        ]
+    },
+    "task-NC_012055-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_012055-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_012055.fasta"
+        ]
+    },
+    "task-NC_013663-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_013663-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_013663.fasta"
+        ]
+    },
+    "task-NC_009064-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_009064-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_009064.fasta"
+        ]
+    },
+    "task-NC_011179-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_011179-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_011179.fasta"
+        ]
+    },
+    "task-NC_013577-fasta": {
+        "workdir": "/home/cc",
+        "push": [
+            "task-NC_013577-fasta.reference"
+        ],
+        "pull": [
+            "databases",
+            "NC_013577.fasta"
+        ]
+    }
+}

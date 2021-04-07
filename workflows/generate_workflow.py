@@ -1,6 +1,7 @@
 
 """Workflow generator for ICCP code."""
 
+import argparse
 import json
 import os
 import re
@@ -8,10 +9,24 @@ import sys
 import time
 import yaml
 
+parser = argparse.ArgumentParser(description='workflow generator')
+parser.add_argument('--prefix', default='workflow1')
+parser.add_argument('--sequence-dir', default='data')
+parser.add_argument('--workdir', default='/home/jaket')
+parser.add_argument('--db-name', default='databases/reference')
+parser.add_argument('--ref-sequence', default='carAur01.sm.fa')
+args = parser.parse_args()
+
 # Hard-coded for now
-WORKDIR = '/home/jaket'
-DB_NAME = 'databases/reference'
-REF_SEQUENCE = 'carAur01.sm.fa'
+PREFIX = args.prefix
+SEQUENCE_DIR = args.sequence_dir
+WORKDIR = args.workdir
+DB_NAME = args.db_name
+REF_SEQUENCE = args.ref_sequence
+
+#WORKDIR = '/home/jaket'
+#DB_NAME = 'databases/reference'
+#REF_SEQUENCE = 'carAur01.sm.fa'
 
 steps = {
     'makeblastdb': {
@@ -21,7 +36,7 @@ steps = {
                            'reference -dbtype nucl -out '
                            'databases/reference',
             'class': 'CommandLineTool',
-            'hints': {'DockerRequirement': {'dockerImageId': '/home/jaket/blast.tar.gz'}},
+            'hints': {'DockerRequirement': {'dockerImageId': f'{WORKDIR}/blast.tar.gz'}},
             'inputs': {'sequence_file': {'type': 'string'}},
             'outputs': {'db_dir': {'type': 'string'}},
         },
@@ -38,9 +53,11 @@ extra_requirements = {
 }
 
 # Get the command line arguments
-prefix = sys.argv[1]
-seq_names = sys.argv[2:]
-for seq_name in seq_names:
+# PREFIX = sys.argv[1]
+# seq_names = sys.argv[2:]
+
+# Create a task for each file in the sequence directory
+for seq_name in os.listdir(SEQUENCE_DIR):
     # Generate a task for each input argument
     task_name = 'task-{}'.format(re.sub(r'\W+', '-', seq_name))
     steps[task_name] = {
@@ -51,7 +68,7 @@ for seq_name in seq_names:
                            f'{task_name}.reference',
             'class': 'CommandLineTool',
             'hints': {
-                'DockerRequirement': {'dockerImageId': '/home/jaket/blast.tar.gz'}
+                'DockerRequirement': {'dockerImageId': f'{WORKDIR}/blast.tar.gz'}
             },
             'inputs': {'db_dir': {'type': 'string'}},
             'outputs': {'out': {'type': 'string'}},
@@ -75,9 +92,9 @@ wfl = {
 
 # Write the workflow file
 t = int(time.time())
-with open(f'{prefix}.cwl', 'a') as fp:
+with open(f'{PREFIX}.cwl', 'a') as fp:
     print('# -*- mode: YAML; -*-', file=fp)
     yaml.dump(wfl, fp)
 # Write the extra requirements file
-with open(f'{prefix}.json', 'w') as fp:
+with open(f'{PREFIX}.json', 'w') as fp:
     json.dump(extra_requirements, fp, indent=4)

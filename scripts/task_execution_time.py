@@ -11,8 +11,11 @@ parser.add_argument('--width', type=int, default=800, help='full width')
 parser.add_argument('--height', type=int, default=500, help='full height')
 parser.add_argument('--graph-width', type=int, default=600, help='graph/diagram width')
 parser.add_argument('--graph-height', type=int, default=200, help='graph/diagram height')
+parser.add_argument('--title', default='Blast Workflow 1 Task Execution Time',
+                    help='graph title')
 args = parser.parse_args()
 
+title = args.title
 width = args.width
 height = args.height
 graph_width = args.graph_width
@@ -96,7 +99,7 @@ for name in task_state_changes:
         )
 
 # Create a title
-title = svgtool.text('Blast Workflow 1 Task Execution Time', x=width / 4, y=30, style='font-size:20pt;')
+title = svgtool.text(title, x=width / 4, y=30, style='font-size:20pt;')
 
 # Create a key
 key = []

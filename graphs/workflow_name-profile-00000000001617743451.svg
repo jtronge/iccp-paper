@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200">
+<g transform="None">
+<text x="200" y="30" style="font-size:20pt;">Google Compute Engine (SSH File Transfer)</text>
+<g transform="translate(120 1120)">
+<text x="0" y="20" style="">PENDING</text>
+<rect x="84" y="0" width="40" height="40" fill="#ff0000">
+</rect>
+<text x="150" y="20" style="">RUNNING</text>
+<rect x="234" y="0" width="40" height="40" fill="#0000ff">
+</rect>
+</g>
+<g transform="translate(0 50)">
+<text x="10" y="23" style="">makeblastdb</text>
+<text x="10" y="174" style="">task-NC_009060-fasta</text>
+<text x="10" y="400" style="">task-NC_009067-fasta</text>
+<text x="10" y="702" style="">task-NC_011179-fasta</text>
+<text x="10" y="890" style="">task-NC_013750-fasta</text>
+<text x="10" y="476" style="">task-NC_010205-fasta</text>
+<text x="10" y="99" style="">task-NC_009058-fasta</text>
+<text x="10" y="61" style="">task-NC_009057-fasta</text>
+<text x="10" y="777" style="">task-NC_013564-fasta</text>
+<text x="10" y="626" style="">task-NC_011171-fasta</text>
+<text x="10" y="740" style="">task-NC_012055-fasta</text>
+<text x="10" y="664" style="">task-NC_011177-fasta</text>
+<text x="10" y="212" style="">task-NC_009062-fasta</text>
+<text x="10" y="287" style="">task-NC_009064-fasta</text>
+<text x="10" y="325" style="">task-NC_009065-fasta</text>
+<text x="10" y="250" style="">task-NC_009063-fasta</text>
+<text x="10" y="589" style="">task-NC_011170-fasta</text>
+<text x="10" y="966" style="">task-NC_018815-fasta</text>
+<text x="10" y="815" style="">task-NC_013577-fasta</text>
+<text x="10" y="513" style="">task-NC_011168-fasta</text>
+<text x="10" y="928" style="">task-NC_018814-fasta</text>
+<text x="10" y="136" style="">task-NC_009059-fasta</text>
+<text x="10" y="438" style="">task-NC_009459-fasta</text>
+<text x="10" y="551" style="">task-NC_011169-fasta</text>
+<text x="10" y="363" style="">task-NC_009066-fasta</text>
+<text x="10" y="853" style="">task-NC_013663-fasta</text>
+<g transform="translate(200 0)">
+<rect x="10" y="10" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="10" y="10" width="5" height="27" fill="#0000ff">
+</rect>
+<rect x="38" y="160" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="39" y="160" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="62" y="386" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="62" y="386" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="84" y="688" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="84" y="688" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="106" y="876" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="106" y="876" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="128" y="462" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="128" y="462" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="151" y="85" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="151" y="85" width="2" height="27" fill="#0000ff">
+</rect>
+<rect x="173" y="47" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="173" y="47" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="196" y="763" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="196" y="763" width="2" height="27" fill="#0000ff">
+</rect>
+<rect x="218" y="613" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="218" y="613" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="241" y="726" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="241" y="726" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="263" y="650" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="263" y="650" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="285" y="198" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="285" y="198" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="307" y="273" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="307" y="273" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="330" y="311" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="330" y="311" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="352" y="236" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="352" y="236" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="374" y="575" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="374" y="575" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="397" y="952" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="397" y="952" width="2" height="27" fill="#0000ff">
+</rect>
+<rect x="419" y="801" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="419" y="801" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="442" y="500" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="442" y="500" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="464" y="914" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="464" y="914" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="487" y="123" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="487" y="123" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="510" y="424" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="510" y="424" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="532" y="537" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="532" y="537" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="554" y="349" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="554" y="349" width="3" height="27" fill="#0000ff">
+</rect>
+<rect x="577" y="839" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="577" y="839" width="2" height="27" fill="#0000ff">
+</rect>
+<g transform="translate(0 1000)">
+<path d="M10,0 L580,0" stroke="#000000"></path>
+<path d="M10.0,0 L10.0,6" stroke="#000000"></path><text x="6" y="20" style="font-size: 10pt">0</text>
+<path d="M66.99999999455643,0 L66.99999999455643,6" stroke="#000000"></path><text x="62" y="20" style="font-size: 10pt">499</text>
+<path d="M123.99999998911287,0 L123.99999998911287,6" stroke="#000000"></path><text x="119" y="20" style="font-size: 10pt">998</text>
+<path d="M181.0000000108871,0 L181.0000000108871,6" stroke="#000000"></path><text x="177" y="20" style="font-size: 10pt">1497</text>
+<path d="M238.00000000544355,0 L238.00000000544355,6" stroke="#000000"></path><text x="234" y="20" style="font-size: 10pt">1997</text>
+<path d="M295.0,0 L295.0,6" stroke="#000000"></path><text x="291" y="20" style="font-size: 10pt">2496</text>
+<path d="M351.9999999945564,0 L351.9999999945564,6" stroke="#000000"></path><text x="347" y="20" style="font-size: 10pt">2995</text>
+<path d="M408.9999999891129,0 L408.9999999891129,6" stroke="#000000"></path><text x="404" y="20" style="font-size: 10pt">3495</text>
+<path d="M466.0000000108871,0 L466.0000000108871,6" stroke="#000000"></path><text x="462" y="20" style="font-size: 10pt">3994</text>
+<path d="M523.0000000054436,0 L523.0000000054436,6" stroke="#000000"></path><text x="519" y="20" style="font-size: 10pt">4493</text>
+<text x="199" y="40" style="">Execution time (s)</text>
+</g>
+</g>
+</g>
+</g>
+</svg>
+
