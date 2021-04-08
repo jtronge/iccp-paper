@@ -8,7 +8,8 @@ import os
 import re
 import sys
 import time
-import yaml
+#import yaml
+import ruamel.yaml as yaml
 
 parser = argparse.ArgumentParser(description='workflow generator')
 parser.add_argument('--output-dir', default='workflows')
@@ -35,14 +36,18 @@ CH_CTR = args.ch_ctr
 # Steps for a standard CWL workflow
 # This corresponds to the YAML input file to the standard CWL
 inputs_file = {
+    'db_title': 'reference',
     'sequence_file': {
         'class': 'File',
-        'path': REF_SEQUENCE,
-    }
+        'path': os.path.join('../', REF_SEQUENCE),
+    },
+    'sequence_queries': [],
 }
 # The inputs field of the CWL file
 inputs = {
+    'db_title': 'string',
     'sequence_file': 'File',
+    'sequence_queries': 'File[]',
 }
 # The steps of the CWL file
 steps = {
@@ -50,14 +55,27 @@ steps = {
         'run': {
             'baseCommand': [
                 'makeblastdb',
-                '-title',
-                'reference',
+                #'-title',
+                #'reference',
                 '-dbtype',
                 'nucl',
-                '-out',
-                'databases/reference',
+                # '-out',
+                #'databases/reference',
             ],
             'class': 'CommandLineTool',
+            'arguments': [
+                {
+                    # 'shellQuote': False,
+                    'prefix': '-out',
+                    # 'valueFrom': '-out $("databases/" + inputs.db_title)',
+                    'valueFrom': '$("databases/" + inputs.db_title)',
+                },
+            ],
+            'requirements': {
+                'ResourceRequirement': {
+                    'tmpdirMin': '10000',
+                },
+            },
             'hints': {
                 'DockerRequirement': {
                     'dockerPull': DOCKER_CTR,
@@ -70,57 +88,105 @@ steps = {
                         'prefix': '-in',
                     },
                 },
+                'db_title': {
+                    'type': 'string',
+                    'inputBinding': {
+                        'prefix': '-title',
+                    }
+                },
             },
             'outputs': {
                 'db_dir': {
                     # TODO: Should type be a Directory?
-                    'type': 'File',
+                    'type': 'Directory',
                     'outputBinding': {
                         'glob': 'databases',
                     },
                 },
             },
         },
-        'in': {'sequence_file': 'sequence_file'},
+        'in': {
+            'sequence_file': 'sequence_file',
+            'db_title': 'db_title',
+        },
         'out': ['db_dir'],
     },
-}
-tool = {
-    'cwlVersion': 'v1.0',
-    'class': 'CommandLineTool',
-    'baseCommand': 'blastn -evalue 1e-3 -word_size 11 -outfmt 0',
-    'class': 'CommandLineTool',
-    'hints': {
-        'DockerRequirement': {
-            'dockerPull': DOCKER_CTR,
-        },
-    },
-    'inputs': {
-        'db_dir': {
-            'type': 'File',
-            'inputBinding': {
-                'prefix': '-db',
+    'sequence': {
+        'run': {
+            'class': 'CommandLineTool',
+            'baseCommand': [
+                'blastn',
+                '-evalue',
+                '1e-3',
+                '-word_size',
+                '11',
+                '-outfmt',
+                '0',
+            ],
+            #'arguments': [
+            #    {
+            #        # 'shellQuote': False,
+            #        'valueFrom': '-db $(inputs.db_dir + "/" + inputs.db_name)'
+            #    },
+            #],
+            'requirements': {
+                'ResourceRequirement': {
+                    'tmpdirMin': '10000',
+                },
             },
-        },
-        'seq_file': {
-            'type': 'File',
-            'inputBinding': {
-                'prefix': '-query',
+            'hints': {
+                'DockerRequirement': {
+                    'dockerPull': DOCKER_CTR,
+                },
             },
+            'inputs': {
+                'db_dir': {
+                    'type': 'Directory',
+                    'inputBinding': {
+                        'prefix': '-db',
+                        'valueFrom': '$(inputs.db_dir.path + "/" + inputs.db_title)',
+                    },
+                },
+                'seq_file': {
+                    'type': 'File',
+                    'inputBinding': {
+                        'prefix': '-query',
+                    },
+                },
+                'db_title': {
+                    'type': 'string',
+                },
+            },
+            'outputs': {
+            # Capture stdout
+                'out': {'type': 'stdout'},
+            },
+            # Save stdout to this file
+            #'stdout': stdout_file,
+            'stdout': '$(inputs.seq_file.basename + ".reference")',
         },
-        'out_file': {
-            'type': 'str',
+        # Make this a scatter workflow
+        'scatter': 'seq_file',
+        'in': {
+            'db_dir': 'makeblastdb/db_dir',
+            'seq_file': 'sequence_queries',
+            'db_title': 'db_title',
+            # 'out_file': stdout_file,
         },
-    },
-    'outputs': {
-    # Capture stdout
-        'out': {'type': 'stdout'},
-    },
-    # Save stdout to this file
-    #'stdout': stdout_file,
-    'stdout': {
-        'valueFrom': '$(inputs.out_file)'
+        'out': ['out'],
     }
+}
+# The CWL workflow
+cwl_wfl = {
+    'class': 'Workflow',
+    'cwlVersion': 'v1.0',
+    'requirements': {
+        'InlineJavascriptRequirement': {},
+        'ScatterFeatureRequirement': {},
+    },
+    'inputs': inputs,
+    'outputs': [],
+    'steps': steps,
 }
 
 # Steps for BEE CWL
@@ -158,25 +224,16 @@ for seq_path in os.listdir(SEQUENCE_DIR):
     # Generate a task for each input argument
     seq_file = re.sub(r'\W+', '-', seq_path)
     task_name = 'task-{}'.format(re.sub(r'\W+', '-', seq_path))
-    stdout_file = f'{seq_file}.reference'
+
+    # Standard CWL workflow code
     # Add an input to the YAML input file
-    inputs_file[seq_file] = {
+    inputs_file['sequence_queries'].append({
         'class': 'File',
         # Add in the relative path so it can be run the repository root
-        'path': os.path.join(SEQUENCE_DIR, seq_path),
-    }
-    # Add an input for the workflow
-    inputs[seq_file] = 'File'
-    # Add a step for the real CWL workflow
-    steps[task_name] = {
-        'run': tool_fname,
-        'in': {
-            'db_dir': 'makeblastdb/db_dir',
-            'seq_file': seq_file,
-            'out_file': stdout_file,
-        },
-        'out': ['out'],
-    }
+        'path': os.path.join('../', SEQUENCE_DIR, seq_path),
+    })
+
+    # BEE Specific workflow code
     # Add a step for the BEE CWL Workflow
     bee_steps[task_name] = {
         'run': {
@@ -201,17 +258,10 @@ for seq_path in os.listdir(SEQUENCE_DIR):
     }
 
 # Write out the tool definition
-with open(os.path.join(OUTPUT_DIR, tool_fname), 'w') as fp:
-    print('# Generated on', date_str, file=fp)
-    yaml.dump(tool, fp)
-# The CWL workflow
-cwl_wfl = {
-    'class': 'Workflow',
-    'cwlVersion': 'v1.0',
-    'inputs': inputs,
-    'outputs': [],
-    'steps': steps,
-}
+#with open(os.path.join(OUTPUT_DIR, tool_fname), 'w') as fp:
+#    print('# Generated on', date_str, file=fp)
+#    yaml.dump(tool, fp)
+
 # Write the input YAML file
 fname = f'{PREFIX}_{date_str}_inputs.yml'
 with open(os.path.join(OUTPUT_DIR, fname), 'w') as fp:
