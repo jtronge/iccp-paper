@@ -1,0 +1,23 @@
+# Generated on 2021-04-08
+baseCommand: blastn -evalue 1e-3 -word_size 11 -outfmt 0
+class: CommandLineTool
+cwlVersion: v1.0
+hints:
+  DockerRequirement:
+    dockerPull: ncbi/blast
+inputs:
+  db_dir:
+    inputBinding:
+      prefix: -db
+    type: File
+  out_file:
+    type: str
+  seq_file:
+    inputBinding:
+      prefix: -query
+    type: File
+outputs:
+  out:
+    type: stdout
+stdout:
+  valueFrom: $(inputs.out_file)

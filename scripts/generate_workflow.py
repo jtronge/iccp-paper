@@ -36,7 +36,8 @@ steps = {
                            'reference -dbtype nucl -out '
                            'databases/reference',
             'class': 'CommandLineTool',
-            'hints': {'DockerRequirement': {'dockerImageId': f'{WORKDIR}/blast.tar.gz'}},
+            # 'hints': {'DockerRequirement': {'dockerImageId': f'{WORKDIR}/blast.tar.gz'}},
+           
             'inputs': {'sequence_file': {'type': 'string'}},
             'outputs': {'db_dir': {'type': 'string'}},
         },
@@ -92,9 +93,9 @@ wfl = {
 
 # Write the workflow file
 t = int(time.time())
-with open(f'{PREFIX}.cwl', 'a') as fp:
+with open(os.path.join('workflows', f'{PREFIX}.cwl'), 'w') as fp:
     print('# -*- mode: YAML; -*-', file=fp)
     yaml.dump(wfl, fp)
 # Write the extra requirements file
-with open(f'{PREFIX}.json', 'w') as fp:
+with open(os.path.join('workflows', f'{PREFIX}.json'), 'w') as fp:
     json.dump(extra_requirements, fp, indent=4)

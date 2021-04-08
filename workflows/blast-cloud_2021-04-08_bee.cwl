@@ -1,4 +1,5 @@
 # -*- mode: YAML; -*-
+# Generated on 2021-04-08
 class: Workflow
 cwlVersion: v1.0
 inputs:
@@ -14,6 +15,9 @@ steps:
       baseCommand: makeblastdb -in carAur01.sm.fa -title reference -dbtype nucl -out
         databases/reference
       class: CommandLineTool
+      hints:
+        DockerRequirement:
+          dockerImageId: /home/cc/blast.tar.gz
       inputs:
         sequence_file:
           type: string
