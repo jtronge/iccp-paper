@@ -114,3 +114,19 @@ def g(transform=None, content=''):
 def text(txt, x, y, style=''):
     """SVG text element."""
     return '<text x="%i" y="%i" style="%s">%s</text>\n' % (x, y, style, txt)
+
+def path(d='', style=''):
+    """SVG path element."""
+    return '<path d="%s" style="%s" />' % (''.join(d), style)
+
+def path_move_to(x, y):
+    """SVG path line move to command."""
+    return 'M%i,%i ' % (x, y)
+
+def path_line_to(x, y):
+    """SVG path line to command."""
+    return 'L%i,%i ' % (x, y)
+
+def translate(x, y):
+    """Return a translate() transform."""
+    return 'translate(%f %f)' % (x, y)

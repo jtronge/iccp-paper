@@ -1,0 +1,722 @@
+{
+    "state_changes": [
+        {
+            "task_id": "2492093e-6069-44d5-89ee-881d682777a9",
+            "task_name": "makeblastdb",
+            "next_state": "PENDING",
+            "timestamp": 1618360050
+        },
+        {
+            "task_id": "2492093e-6069-44d5-89ee-881d682777a9",
+            "task_name": "makeblastdb",
+            "next_state": "RUNNING",
+            "timestamp": 1618360051
+        },
+        {
+            "task_id": "2492093e-6069-44d5-89ee-881d682777a9",
+            "task_name": "makeblastdb",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360128
+        },
+        {
+            "task_id": "91b3be0b-8125-440e-9ba7-fe250c15df98",
+            "task_name": "task-NC_011171-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360136
+        },
+        {
+            "task_id": "91b3be0b-8125-440e-9ba7-fe250c15df98",
+            "task_name": "task-NC_011171-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360136
+        },
+        {
+            "task_id": "91b3be0b-8125-440e-9ba7-fe250c15df98",
+            "task_name": "task-NC_011171-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360170
+        },
+        {
+            "task_id": "61024ebe-612f-420b-8ed7-f8dbd77259be",
+            "task_name": "task-NC_013750-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360527
+        },
+        {
+            "task_id": "61024ebe-612f-420b-8ed7-f8dbd77259be",
+            "task_name": "task-NC_013750-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360528
+        },
+        {
+            "task_id": "61024ebe-612f-420b-8ed7-f8dbd77259be",
+            "task_name": "task-NC_013750-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360558
+        },
+        {
+            "task_id": "3fd6c6ef-9a1d-426d-ad44-ed95de53e3b1",
+            "task_name": "task-NC_009064-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360564
+        },
+        {
+            "task_id": "2acc5738-ed0f-4f45-99a0-f988ea5aba01",
+            "task_name": "task-NC_009062-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360564
+        },
+        {
+            "task_id": "2acc5738-ed0f-4f45-99a0-f988ea5aba01",
+            "task_name": "task-NC_009062-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360564
+        },
+        {
+            "task_id": "3fd6c6ef-9a1d-426d-ad44-ed95de53e3b1",
+            "task_name": "task-NC_009064-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360564
+        },
+        {
+            "task_id": "3fd6c6ef-9a1d-426d-ad44-ed95de53e3b1",
+            "task_name": "task-NC_009064-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360588
+        },
+        {
+            "task_id": "2acc5738-ed0f-4f45-99a0-f988ea5aba01",
+            "task_name": "task-NC_009062-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360595
+        },
+        {
+            "task_id": "b6e9cc54-8fe3-44c4-80fe-9d6aed08a4b2",
+            "task_name": "task-NC_009065-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360599
+        },
+        {
+            "task_id": "b6e9cc54-8fe3-44c4-80fe-9d6aed08a4b2",
+            "task_name": "task-NC_009065-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360599
+        },
+        {
+            "task_id": "ab59fdef-713a-4b3b-9e32-2763db41e138",
+            "task_name": "task-NC_013577-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360604
+        },
+        {
+            "task_id": "ab59fdef-713a-4b3b-9e32-2763db41e138",
+            "task_name": "task-NC_013577-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360604
+        },
+        {
+            "task_id": "ab59fdef-713a-4b3b-9e32-2763db41e138",
+            "task_name": "task-NC_013577-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360630
+        },
+        {
+            "task_id": "b6e9cc54-8fe3-44c4-80fe-9d6aed08a4b2",
+            "task_name": "task-NC_009065-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360633
+        },
+        {
+            "task_id": "8c448d2a-312a-41ce-9f49-a94942ba94da",
+            "task_name": "task-NC_010205-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360639
+        },
+        {
+            "task_id": "69cc57f4-10c3-4098-810b-509698db102e",
+            "task_name": "task-NC_009066-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360639
+        },
+        {
+            "task_id": "8c448d2a-312a-41ce-9f49-a94942ba94da",
+            "task_name": "task-NC_010205-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360639
+        },
+        {
+            "task_id": "69cc57f4-10c3-4098-810b-509698db102e",
+            "task_name": "task-NC_009066-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360639
+        },
+        {
+            "task_id": "8c448d2a-312a-41ce-9f49-a94942ba94da",
+            "task_name": "task-NC_010205-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360665
+        },
+        {
+            "task_id": "69cc57f4-10c3-4098-810b-509698db102e",
+            "task_name": "task-NC_009066-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360683
+        },
+        {
+            "task_id": "d442d406-b9f6-4d2f-a009-c66ba852f507",
+            "task_name": "task-NC_011177-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360688
+        },
+        {
+            "task_id": "d442d406-b9f6-4d2f-a009-c66ba852f507",
+            "task_name": "task-NC_011177-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360689
+        },
+        {
+            "task_id": "dd4bbc2a-1ea6-4bf1-b586-6f664ae86fc8",
+            "task_name": "task-NC_009063-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360689
+        },
+        {
+            "task_id": "dd4bbc2a-1ea6-4bf1-b586-6f664ae86fc8",
+            "task_name": "task-NC_009063-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360689
+        },
+        {
+            "task_id": "d442d406-b9f6-4d2f-a009-c66ba852f507",
+            "task_name": "task-NC_011177-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360715
+        },
+        {
+            "task_id": "dd4bbc2a-1ea6-4bf1-b586-6f664ae86fc8",
+            "task_name": "task-NC_009063-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360728
+        },
+        {
+            "task_id": "273ea6ca-ad9c-412e-8649-9cd8199f1683",
+            "task_name": "task-NC_011169-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360733
+        },
+        {
+            "task_id": "273ea6ca-ad9c-412e-8649-9cd8199f1683",
+            "task_name": "task-NC_011169-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360734
+        },
+        {
+            "task_id": "bc5e814e-3347-4b57-9301-c683fce5c1a6",
+            "task_name": "task-NC_013663-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360734
+        },
+        {
+            "task_id": "bc5e814e-3347-4b57-9301-c683fce5c1a6",
+            "task_name": "task-NC_013663-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360734
+        },
+        {
+            "task_id": "273ea6ca-ad9c-412e-8649-9cd8199f1683",
+            "task_name": "task-NC_011169-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360760
+        },
+        {
+            "task_id": "bc5e814e-3347-4b57-9301-c683fce5c1a6",
+            "task_name": "task-NC_013663-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360773
+        },
+        {
+            "task_id": "80f679b1-b400-4cba-8db6-0cbc1bc4f1a6",
+            "task_name": "task-NC_009067-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360779
+        },
+        {
+            "task_id": "80f679b1-b400-4cba-8db6-0cbc1bc4f1a6",
+            "task_name": "task-NC_009067-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360779
+        },
+        {
+            "task_id": "fd21de51-4ccc-47e9-8851-f398e3d4a934",
+            "task_name": "task-NC_012055-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360779
+        },
+        {
+            "task_id": "fd21de51-4ccc-47e9-8851-f398e3d4a934",
+            "task_name": "task-NC_012055-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360779
+        },
+        {
+            "task_id": "80f679b1-b400-4cba-8db6-0cbc1bc4f1a6",
+            "task_name": "task-NC_009067-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360805
+        },
+        {
+            "task_id": "fd21de51-4ccc-47e9-8851-f398e3d4a934",
+            "task_name": "task-NC_012055-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360818
+        },
+        {
+            "task_id": "d5b16f8d-5c77-4dd9-84ac-b9fe10f85740",
+            "task_name": "task-NC_009059-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360823
+        },
+        {
+            "task_id": "d5b16f8d-5c77-4dd9-84ac-b9fe10f85740",
+            "task_name": "task-NC_009059-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360824
+        },
+        {
+            "task_id": "68a61b0e-33a1-4ae2-a524-ab7d4a6467c7",
+            "task_name": "task-NC_009459-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360824
+        },
+        {
+            "task_id": "68a61b0e-33a1-4ae2-a524-ab7d4a6467c7",
+            "task_name": "task-NC_009459-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360824
+        },
+        {
+            "task_id": "d5b16f8d-5c77-4dd9-84ac-b9fe10f85740",
+            "task_name": "task-NC_009059-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360855
+        },
+        {
+            "task_id": "68a61b0e-33a1-4ae2-a524-ab7d4a6467c7",
+            "task_name": "task-NC_009459-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360868
+        },
+        {
+            "task_id": "aa8726fc-a29f-4858-9ee3-953d5fdb8555",
+            "task_name": "task-NC_009057-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360873
+        },
+        {
+            "task_id": "aa8726fc-a29f-4858-9ee3-953d5fdb8555",
+            "task_name": "task-NC_009057-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360874
+        },
+        {
+            "task_id": "e977172a-03c3-4cf8-822f-d7a7acfbc566",
+            "task_name": "task-NC_009060-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360874
+        },
+        {
+            "task_id": "e977172a-03c3-4cf8-822f-d7a7acfbc566",
+            "task_name": "task-NC_009060-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360874
+        },
+        {
+            "task_id": "aa8726fc-a29f-4858-9ee3-953d5fdb8555",
+            "task_name": "task-NC_009057-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360900
+        },
+        {
+            "task_id": "e977172a-03c3-4cf8-822f-d7a7acfbc566",
+            "task_name": "task-NC_009060-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360918
+        },
+        {
+            "task_id": "e768bae2-9b75-4336-b535-1f3b495adc3b",
+            "task_name": "task-NC_011170-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360924
+        },
+        {
+            "task_id": "4c98d56d-39d3-4d94-b9e3-20460cd47342",
+            "task_name": "task-NC_009058-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360924
+        },
+        {
+            "task_id": "e768bae2-9b75-4336-b535-1f3b495adc3b",
+            "task_name": "task-NC_011170-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360924
+        },
+        {
+            "task_id": "4c98d56d-39d3-4d94-b9e3-20460cd47342",
+            "task_name": "task-NC_009058-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360924
+        },
+        {
+            "task_id": "e768bae2-9b75-4336-b535-1f3b495adc3b",
+            "task_name": "task-NC_011170-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360955
+        },
+        {
+            "task_id": "4c98d56d-39d3-4d94-b9e3-20460cd47342",
+            "task_name": "task-NC_009058-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360963
+        },
+        {
+            "task_id": "32efa1ac-2775-4258-820a-2682ec37c7f6",
+            "task_name": "task-NC_018814-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360968
+        },
+        {
+            "task_id": "32efa1ac-2775-4258-820a-2682ec37c7f6",
+            "task_name": "task-NC_018814-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360969
+        },
+        {
+            "task_id": "fea371df-ea09-4cd8-9248-312342a7d206",
+            "task_name": "task-NC_018815-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618360969
+        },
+        {
+            "task_id": "fea371df-ea09-4cd8-9248-312342a7d206",
+            "task_name": "task-NC_018815-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618360969
+        },
+        {
+            "task_id": "32efa1ac-2775-4258-820a-2682ec37c7f6",
+            "task_name": "task-NC_018814-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618360995
+        },
+        {
+            "task_id": "fea371df-ea09-4cd8-9248-312342a7d206",
+            "task_name": "task-NC_018815-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618361008
+        },
+        {
+            "task_id": "d59df8bf-9494-4b02-b74b-5d0074370a54",
+            "task_name": "task-NC_013564-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618361014
+        },
+        {
+            "task_id": "d59df8bf-9494-4b02-b74b-5d0074370a54",
+            "task_name": "task-NC_013564-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618361014
+        },
+        {
+            "task_id": "86f6cd86-5046-4e96-b461-de38c39bf69d",
+            "task_name": "task-NC_011168-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618361014
+        },
+        {
+            "task_id": "86f6cd86-5046-4e96-b461-de38c39bf69d",
+            "task_name": "task-NC_011168-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618361014
+        },
+        {
+            "task_id": "d59df8bf-9494-4b02-b74b-5d0074370a54",
+            "task_name": "task-NC_013564-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618361040
+        },
+        {
+            "task_id": "86f6cd86-5046-4e96-b461-de38c39bf69d",
+            "task_name": "task-NC_011168-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618361053
+        },
+        {
+            "task_id": "220e94d6-d5ef-4210-92d2-7fbef1f4d876",
+            "task_name": "task-NC_011179-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1618361059
+        },
+        {
+            "task_id": "220e94d6-d5ef-4210-92d2-7fbef1f4d876",
+            "task_name": "task-NC_011179-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1618361059
+        },
+        {
+            "task_id": "220e94d6-d5ef-4210-92d2-7fbef1f4d876",
+            "task_name": "task-NC_011179-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1618361085
+        }
+    ],
+    "scheduling_results": [
+        {
+            "tasks": [
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "2492093e-6069-44d5-89ee-881d682777a9",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                }
+            ],
+            "resource_ids": {
+                "localhost:5055": "google-0",
+                "localhost:7000": "chameleoncloud-0"
+            },
+            "resources": [
+                {
+                    "id_": "localhost:5055",
+                    "nodes": 1
+                },
+                {
+                    "id_": "localhost:7000",
+                    "nodes": 1
+                }
+            ],
+            "allocations": {},
+            "timestamp": 1618360042
+        },
+        {
+            "tasks": [
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "91b3be0b-8125-440e-9ba7-fe250c15df98",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "61024ebe-612f-420b-8ed7-f8dbd77259be",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "2acc5738-ed0f-4f45-99a0-f988ea5aba01",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "3fd6c6ef-9a1d-426d-ad44-ed95de53e3b1",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "ab59fdef-713a-4b3b-9e32-2763db41e138",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "b6e9cc54-8fe3-44c4-80fe-9d6aed08a4b2",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "8c448d2a-312a-41ce-9f49-a94942ba94da",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "69cc57f4-10c3-4098-810b-509698db102e",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "d442d406-b9f6-4d2f-a009-c66ba852f507",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "dd4bbc2a-1ea6-4bf1-b586-6f664ae86fc8",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "273ea6ca-ad9c-412e-8649-9cd8199f1683",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "bc5e814e-3347-4b57-9301-c683fce5c1a6",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "80f679b1-b400-4cba-8db6-0cbc1bc4f1a6",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "fd21de51-4ccc-47e9-8851-f398e3d4a934",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "d5b16f8d-5c77-4dd9-84ac-b9fe10f85740",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "68a61b0e-33a1-4ae2-a524-ab7d4a6467c7",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "aa8726fc-a29f-4858-9ee3-953d5fdb8555",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "e977172a-03c3-4cf8-822f-d7a7acfbc566",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "e768bae2-9b75-4336-b535-1f3b495adc3b",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "4c98d56d-39d3-4d94-b9e3-20460cd47342",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "32efa1ac-2775-4258-820a-2682ec37c7f6",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "fea371df-ea09-4cd8-9248-312342a7d206",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "d59df8bf-9494-4b02-b74b-5d0074370a54",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "86f6cd86-5046-4e96-b461-de38c39bf69d",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                },
+                {
+                    "workflow_name": "workflow",
+                    "task_name": "220e94d6-d5ef-4210-92d2-7fbef1f4d876",
+                    "requirements": {
+                        "max_runtime": 1,
+                        "nodes": 1
+                    }
+                }
+            ],
+            "resource_ids": {
+                "localhost:5055": "google-0",
+                "localhost:7000": "chameleoncloud-0"
+            },
+            "resources": [
+                {
+                    "id_": "localhost:5055",
+                    "nodes": 1
+                },
+                {
+                    "id_": "localhost:7000",
+                    "nodes": 1
+                }
+            ],
+            "allocations": {},
+            "timestamp": 1618360129
+        }
+    ]
+}
