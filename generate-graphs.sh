@@ -47,3 +47,9 @@ python ./scripts/run_graph.py \
 	profiles/one-node-google.json \
 	profiles/two-node-chameleon-google.json \
 	> graphs/workflow-comparison-`date +%F`.svg
+
+python ./scripts/run_graph.py \
+	profiles/one-node-google.json \
+	profiles/two-node-chameleon-google.json \
+	profiles/four-node-profile-chameleon-google.json \
+	> graphs/workflow-comparison-4-2-1-`date +%F`.svg
