@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800">
+<g transform="translate(0.000000 40.000000)">
+<g transform="translate(20.000000 20.000000)">
+<g transform="translate(100.000000 0.000000)">
+<rect x="100" y="0" width="29" height="24" >
+</rect>
+<rect x="139" y="0" width="29" height="24" >
+</rect>
+<rect x="179" y="0" width="29" height="24" >
+</rect>
+<rect x="219" y="0" width="29" height="24" >
+</rect>
+<rect x="258" y="0" width="29" height="24" >
+</rect>
+<rect x="298" y="0" width="29" height="24" >
+</rect>
+<rect x="338" y="0" width="29" height="24" >
+</rect>
+<rect x="378" y="0" width="29" height="24" >
+</rect>
+<rect x="417" y="0" width="29" height="24" >
+</rect>
+<rect x="457" y="0" width="29" height="24" >
+</rect>
+<rect x="497" y="0" width="29" height="24" >
+</rect>
+<rect x="536" y="0" width="29" height="24" >
+</rect>
+<text x="566" y="16" style="">235.00s in total</text>
+</g>
+<text x="0" y="16" style="font-weight:bold;font-size:14pt;">Run 0</text>
+<g transform="translate(100.000000 0.000000)">
+<text x="30" y="13" style="">google-0</text>
+</g>
+<path d="M0,26 L666,26 " style="stroke: #000000; stroke-width: 1px;" /></g>
+<g transform="translate(20.000000 20.000000)">
+<g transform="translate(100.000000 0.000000)">
+<rect x="100" y="32" width="29" height="24" >
+</rect>
+<rect x="101" y="64" width="29" height="24" >
+</rect>
+<rect x="139" y="32" width="27" height="24" >
+</rect>
+<rect x="141" y="64" width="29" height="24" >
+</rect>
+<rect x="179" y="32" width="29" height="24" >
+</rect>
+<rect x="181" y="64" width="29" height="24" >
+</rect>
+<rect x="219" y="32" width="29" height="24" >
+</rect>
+<rect x="221" y="64" width="29" height="24" >
+</rect>
+<rect x="258" y="32" width="27" height="24" >
+</rect>
+<rect x="290" y="64" width="29" height="24" >
+</rect>
+<rect x="298" y="32" width="29" height="24" >
+</rect>
+<rect x="338" y="32" width="29" height="24" >
+</rect>
+<text x="368" y="64" style="">135.00s in total</text>
+</g>
+<text x="0" y="64" style="font-weight:bold;font-size:14pt;">Run 1</text>
+<g transform="translate(100.000000 0.000000)">
+<text x="30" y="45" style="">google-0</text>
+<text x="-30" y="77" style="">chameleoncloud-0</text>
+</g>
+<path d="M0,90 L666,90 " style="stroke: #000000; stroke-width: 1px;" /></g>
+<g transform="translate(20.000000 20.000000)">
+<g transform="translate(100.000000 0.000000)">
+<rect x="100" y="192" width="29" height="24" >
+</rect>
+<rect x="101" y="128" width="29" height="24" >
+</rect>
+<rect x="139" y="192" width="29" height="24" >
+</rect>
+<rect x="141" y="128" width="29" height="24" >
+</rect>
+<rect x="179" y="192" width="29" height="24" >
+</rect>
+<rect x="181" y="128" width="29" height="24" >
+</rect>
+<rect x="219" y="192" width="29" height="24" >
+</rect>
+<rect x="221" y="96" width="29" height="24" >
+</rect>
+<rect x="221" y="128" width="29" height="24" >
+</rect>
+<rect x="258" y="192" width="29" height="24" >
+</rect>
+<rect x="260" y="96" width="27" height="24" >
+</rect>
+<rect x="260" y="128" width="29" height="24" >
+</rect>
+<text x="290" y="160" style="">96.00s in total</text>
+</g>
+<text x="0" y="160" style="font-weight:bold;font-size:14pt;">Run 2</text>
+<g transform="translate(100.000000 0.000000)">
+<text x="-30" y="205" style="">chameleoncloud-1</text>
+<text x="30" y="141" style="">google-0</text>
+<text x="30" y="109" style="">google-1</text>
+<text x="-30" y="173" style="">chameleoncloud-0</text>
+</g>
+<path d="M0,218 L666,218 " style="stroke: #000000; stroke-width: 1px;" /></g>
+</g>
+<text x="100" y="30" style="font-size:18pt;">Workflow Comparison: Single Cloud vs Multi-Cloud</text>
+</svg>
+

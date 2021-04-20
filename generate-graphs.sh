@@ -53,3 +53,7 @@ python ./scripts/run_graph.py \
 	profiles/two-node-chameleon-google.json \
 	profiles/four-node-profile-chameleon-google.json \
 	> graphs/workflow-comparison-4-2-1-`date +%F`.svg
+
+python ./scripts/run_graph.py \
+	profiles/sleep-workflow/*.json \
+	> graphs/sleep-workflow.svg
