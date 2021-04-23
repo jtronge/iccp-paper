@@ -1,109 +1,387 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800">
-<g transform="translate(0.000000 40.000000)">
-<g transform="translate(20.000000 20.000000)">
-<g transform="translate(100.000000 0.000000)">
-<rect x="100" y="0" width="29" height="24" >
-</rect>
-<rect x="139" y="0" width="29" height="24" >
-</rect>
-<rect x="179" y="0" width="29" height="24" >
-</rect>
-<rect x="219" y="0" width="29" height="24" >
-</rect>
-<rect x="258" y="0" width="29" height="24" >
-</rect>
-<rect x="298" y="0" width="29" height="24" >
-</rect>
-<rect x="338" y="0" width="29" height="24" >
-</rect>
-<rect x="378" y="0" width="29" height="24" >
-</rect>
-<rect x="417" y="0" width="29" height="24" >
-</rect>
-<rect x="457" y="0" width="29" height="24" >
-</rect>
-<rect x="497" y="0" width="29" height="24" >
-</rect>
-<rect x="536" y="0" width="29" height="24" >
-</rect>
-<text x="566" y="16" style="">235.00s in total</text>
-</g>
-<text x="0" y="16" style="font-weight:bold;font-size:14pt;">Run 0</text>
-<g transform="translate(100.000000 0.000000)">
-<text x="30" y="13" style="">google-0</text>
-</g>
-<path d="M0,26 L666,26 " style="stroke: #000000; stroke-width: 1px;" /></g>
-<g transform="translate(20.000000 20.000000)">
-<g transform="translate(100.000000 0.000000)">
-<rect x="100" y="32" width="29" height="24" >
-</rect>
-<rect x="101" y="64" width="29" height="24" >
-</rect>
-<rect x="139" y="32" width="27" height="24" >
-</rect>
-<rect x="141" y="64" width="29" height="24" >
-</rect>
-<rect x="179" y="32" width="29" height="24" >
-</rect>
-<rect x="181" y="64" width="29" height="24" >
-</rect>
-<rect x="219" y="32" width="29" height="24" >
-</rect>
-<rect x="221" y="64" width="29" height="24" >
-</rect>
-<rect x="258" y="32" width="27" height="24" >
-</rect>
-<rect x="290" y="64" width="29" height="24" >
-</rect>
-<rect x="298" y="32" width="29" height="24" >
-</rect>
-<rect x="338" y="32" width="29" height="24" >
-</rect>
-<text x="368" y="64" style="">135.00s in total</text>
-</g>
-<text x="0" y="64" style="font-weight:bold;font-size:14pt;">Run 1</text>
-<g transform="translate(100.000000 0.000000)">
-<text x="30" y="45" style="">google-0</text>
-<text x="-30" y="77" style="">chameleoncloud-0</text>
-</g>
-<path d="M0,90 L666,90 " style="stroke: #000000; stroke-width: 1px;" /></g>
-<g transform="translate(20.000000 20.000000)">
-<g transform="translate(100.000000 0.000000)">
-<rect x="100" y="192" width="29" height="24" >
-</rect>
-<rect x="101" y="128" width="29" height="24" >
-</rect>
-<rect x="139" y="192" width="29" height="24" >
-</rect>
-<rect x="141" y="128" width="29" height="24" >
-</rect>
-<rect x="179" y="192" width="29" height="24" >
-</rect>
-<rect x="181" y="128" width="29" height="24" >
-</rect>
-<rect x="219" y="192" width="29" height="24" >
-</rect>
-<rect x="221" y="96" width="29" height="24" >
-</rect>
-<rect x="221" y="128" width="29" height="24" >
-</rect>
-<rect x="258" y="192" width="29" height="24" >
-</rect>
-<rect x="260" y="96" width="27" height="24" >
-</rect>
-<rect x="260" y="128" width="29" height="24" >
-</rect>
-<text x="290" y="160" style="">96.00s in total</text>
-</g>
-<text x="0" y="160" style="font-weight:bold;font-size:14pt;">Run 2</text>
-<g transform="translate(100.000000 0.000000)">
-<text x="-30" y="205" style="">chameleoncloud-1</text>
-<text x="30" y="141" style="">google-0</text>
-<text x="30" y="109" style="">google-1</text>
-<text x="-30" y="173" style="">chameleoncloud-0</text>
-</g>
-<path d="M0,218 L666,218 " style="stroke: #000000; stroke-width: 1px;" /></g>
-</g>
-<text x="100" y="30" style="font-size:18pt;">Workflow Comparison: Single Cloud vs Multi-Cloud</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="910.69849"
+   height="243.94"
+   version="1.1"
+   id="svg7396"
+   sodipodi:docname="sleep-workflow.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata7402">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7400" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     id="namedview7398"
+     showgrid="false"
+     fit-margin-top="11"
+     fit-margin-right="11"
+     fit-margin-left="11"
+     fit-margin-bottom="11"
+     inkscape:zoom="1.056"
+     inkscape:cx="491"
+     inkscape:cy="202.92485"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7396" />
+  <g
+     transform="translate(-9,-5.5600005)"
+     id="g7392">
+    <g
+       transform="translate(20,20)"
+       id="g7306">
+      <g
+         transform="translate(180)"
+         id="g7296">
+        <rect
+           x="100"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7270" />
+        <rect
+           x="139"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7272" />
+        <rect
+           x="179"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7274" />
+        <rect
+           x="219"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7276" />
+        <rect
+           x="258"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7278" />
+        <rect
+           x="298"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7280" />
+        <rect
+           x="338"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7282" />
+        <rect
+           x="378"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7284" />
+        <rect
+           x="417"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7286" />
+        <rect
+           x="457"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7288" />
+        <rect
+           x="497"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7290" />
+        <rect
+           x="536"
+           y="0"
+           width="29"
+           height="24"
+           id="rect7292" />
+        <text
+           x="566"
+           y="16"
+           style="font-size:21.3333px"
+           id="text7294">235.00s in total</text>
+      </g>
+      <text
+         x="0"
+         y="16"
+         style="font-weight:bold;font-size:26.6667px"
+         id="text7298">Run 0</text>
+      <g
+         transform="translate(180)"
+         id="g7302">
+        <text
+           x="90"
+           y="19"
+           style="font-size:21.3333px;text-anchor:end"
+           id="text7300">google-0</text>
+      </g>
+      <path
+         d="M 0,26 H 746"
+         style="stroke:#000000;stroke-width:1px"
+         id="path7304" />
+    </g>
+    <g
+       transform="translate(20,20)"
+       id="g7346">
+      <g
+         transform="translate(180)"
+         id="g7334">
+        <rect
+           x="100"
+           y="32"
+           width="29"
+           height="24"
+           id="rect7308" />
+        <rect
+           x="101"
+           y="64"
+           width="29"
+           height="24"
+           id="rect7310" />
+        <rect
+           x="139"
+           y="32"
+           width="27"
+           height="24"
+           id="rect7312" />
+        <rect
+           x="141"
+           y="64"
+           width="29"
+           height="24"
+           id="rect7314" />
+        <rect
+           x="179"
+           y="32"
+           width="29"
+           height="24"
+           id="rect7316" />
+        <rect
+           x="181"
+           y="64"
+           width="29"
+           height="24"
+           id="rect7318" />
+        <rect
+           x="219"
+           y="32"
+           width="29"
+           height="24"
+           id="rect7320" />
+        <rect
+           x="221"
+           y="64"
+           width="29"
+           height="24"
+           id="rect7322" />
+        <rect
+           x="258"
+           y="32"
+           width="27"
+           height="24"
+           id="rect7324" />
+        <rect
+           x="290"
+           y="64"
+           width="29"
+           height="24"
+           id="rect7326" />
+        <rect
+           x="298"
+           y="32"
+           width="29"
+           height="24"
+           id="rect7328" />
+        <rect
+           x="338"
+           y="32"
+           width="29"
+           height="24"
+           id="rect7330" />
+        <text
+           x="368"
+           y="64"
+           style="font-size:21.3333px"
+           id="text7332">135.00s in total</text>
+      </g>
+      <text
+         x="0"
+         y="64"
+         style="font-weight:bold;font-size:26.6667px"
+         id="text7336">Run 1</text>
+      <g
+         transform="translate(180)"
+         id="g7342">
+        <text
+           x="90"
+           y="51"
+           style="font-size:21.3333px;text-anchor:end"
+           id="text7338">google-0</text>
+        <text
+           x="90"
+           y="83"
+           style="font-size:21.3333px;text-anchor:end"
+           id="text7340">chameleoncloud-0</text>
+      </g>
+      <path
+         d="M 0,90 H 746"
+         style="stroke:#000000;stroke-width:1px"
+         id="path7344" />
+    </g>
+    <g
+       transform="translate(20,20)"
+       id="g7390">
+      <g
+         transform="translate(180)"
+         id="g7374">
+        <rect
+           x="100"
+           y="192"
+           width="29"
+           height="24"
+           id="rect7348" />
+        <rect
+           x="101"
+           y="128"
+           width="29"
+           height="24"
+           id="rect7350" />
+        <rect
+           x="139"
+           y="192"
+           width="29"
+           height="24"
+           id="rect7352" />
+        <rect
+           x="141"
+           y="128"
+           width="29"
+           height="24"
+           id="rect7354" />
+        <rect
+           x="179"
+           y="192"
+           width="29"
+           height="24"
+           id="rect7356" />
+        <rect
+           x="181"
+           y="128"
+           width="29"
+           height="24"
+           id="rect7358" />
+        <rect
+           x="219"
+           y="192"
+           width="29"
+           height="24"
+           id="rect7360" />
+        <rect
+           x="221"
+           y="96"
+           width="29"
+           height="24"
+           id="rect7362" />
+        <rect
+           x="221"
+           y="128"
+           width="29"
+           height="24"
+           id="rect7364" />
+        <rect
+           x="258"
+           y="192"
+           width="29"
+           height="24"
+           id="rect7366" />
+        <rect
+           x="260"
+           y="96"
+           width="27"
+           height="24"
+           id="rect7368" />
+        <rect
+           x="260"
+           y="128"
+           width="29"
+           height="24"
+           id="rect7370" />
+        <text
+           x="290"
+           y="160"
+           style="font-size:21.3333px"
+           id="text7372">96.00s in total</text>
+      </g>
+      <text
+         x="0"
+         y="160"
+         style="font-weight:bold;font-size:26.6667px"
+         id="text7376">Run 2</text>
+      <g
+         transform="translate(180)"
+         id="g7386">
+        <text
+           x="90"
+           y="211"
+           style="font-size:21.3333px;text-anchor:end"
+           id="text7378">chameleoncloud-1</text>
+        <text
+           x="90"
+           y="147"
+           style="font-size:21.3333px;text-anchor:end"
+           id="text7380">google-0</text>
+        <text
+           x="90"
+           y="115"
+           style="font-size:21.3333px;text-anchor:end"
+           id="text7382">google-1</text>
+        <text
+           x="90"
+           y="179"
+           style="font-size:21.3333px;text-anchor:end"
+           id="text7384">chameleoncloud-0</text>
+      </g>
+      <path
+         d="M 0,218 H 746"
+         style="stroke:#000000;stroke-width:1px"
+         id="path7388" />
+    </g>
+  </g>
 </svg>
-

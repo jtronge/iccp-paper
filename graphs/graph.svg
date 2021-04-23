@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
+   sodipodi:docname="graph.svg">
+  <defs
+     id="defs2">
+    <rect
+       x="-118.31143"
+       y="32.237511"
+       width="81.3269"
+       height="16.786383"
+       id="rect958" />
+    <rect
+       x="62.52032"
+       y="-60.159827"
+       width="99.422241"
+       height="27.735437"
+       id="rect922" />
+    <rect
+       x="142.19264"
+       y="133.06336"
+       width="44.96278"
+       height="30.102307"
+       id="rect889" />
+    <rect
+       x="153.4462"
+       y="6.1173592"
+       width="71.827601"
+       height="39.114445"
+       id="rect855" />
+    <rect
+       x="142.19264"
+       y="133.06336"
+       width="44.96278"
+       height="30.102307"
+       id="rect908" />
+    <rect
+       x="142.19264"
+       y="133.06336"
+       width="44.96278"
+       height="30.102307"
+       id="rect918" />
+    <rect
+       x="62.52032"
+       y="-60.159827"
+       width="99.422241"
+       height="27.735437"
+       id="rect930" />
+    <rect
+       x="62.52032"
+       y="-60.159827"
+       width="99.422241"
+       height="27.735437"
+       id="rect936" />
+    <rect
+       x="62.52032"
+       y="-60.159827"
+       width="99.422241"
+       height="27.735437"
+       id="rect942" />
+    <rect
+       x="142.19264"
+       y="133.06336"
+       width="44.96278"
+       height="30.102307"
+       id="rect954" />
+    <rect
+       x="142.19264"
+       y="133.06336"
+       width="44.96278"
+       height="30.102307"
+       id="rect966" />
+    <rect
+       x="142.19264"
+       y="133.06336"
+       width="61.135327"
+       height="30.276789"
+       id="rect974" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-315.12161"
+     inkscape:cy="672.15897"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="225.2738,222.91667"
+       orientation="1,0"
+       id="guide849" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.54367;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect835"
+       width="98.456337"
+       height="98.456329"
+       x="126.81745"
+       y="-24.372999" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.54367;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect847"
+       width="98.456337"
+       height="98.456329"
+       x="126.81744"
+       y="98.410034" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.54367;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect851"
+       width="98.456337"
+       height="98.456329"
+       x="126.81745"
+       y="218.10562" />
+    <text
+       xml:space="preserve"
+       id="text853"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.58333333px;white-space:pre;shape-inside:url(#rect855);" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect859"
+       width="100"
+       height="200"
+       x="-116.71372"
+       y="51.365765" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M -16.950158,148.24854 H 126.39202"
+       id="path881" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 53.568549,147.50511 V 268.14774 H 127.47577"
+       id="path883" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 53.568549,147.50511 V 26.756637 h 73.762111"
+       id="path885" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect893"
+       width="59.112354"
+       height="59.112354"
+       x="146.56003"
+       y="116.85383" />
+    <text
+       xml:space="preserve"
+       id="text887"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect889);fill:#000000;fill-opacity:1;stroke:none;"
+       x="41.285393"
+       y="0"
+       transform="translate(11.112501)"><tspan
+         x="153.7423"
+         y="142.10064"><tspan
+           style="text-align:center;text-anchor:middle">Task </tspan></tspan><tspan
+         x="143.85749"
+         y="155.32976"><tspan
+           style="text-align:center;text-anchor:middle">Manager</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect900"
+       width="59.112354"
+       height="59.112354"
+       x="146.56003"
+       y="237.50233" />
+    <text
+       xml:space="preserve"
+       id="text906"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect908);fill:#000000;fill-opacity:1;stroke:none;"
+       x="41.285393"
+       y="0"
+       transform="translate(11.112501,120.65019)"><tspan
+         x="153.7423"
+         y="142.10064"><tspan
+           style="text-align:center;text-anchor:middle">Task </tspan></tspan><tspan
+         x="143.85749"
+         y="155.32976"><tspan
+           style="text-align:center;text-anchor:middle">Manager</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect910"
+       width="59.112354"
+       height="59.112354"
+       x="146.56003"
+       y="-5.3837543" />
+    <text
+       xml:space="preserve"
+       id="text916"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect918);fill:#000000;fill-opacity:1;stroke:none;"
+       x="41.285393"
+       y="0"
+       transform="translate(11.112501,-122.2377)"><tspan
+         x="153.7423"
+         y="142.10064"><tspan
+           style="text-align:center;text-anchor:middle">Task </tspan></tspan><tspan
+         x="143.85749"
+         y="155.32976"><tspan
+           style="text-align:center;text-anchor:middle">Manager</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text920"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect922);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="translate(94.637817,39.570335)"><tspan
+         x="62.519531"
+         y="-51.122018"><tspan>Cloud 0</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text928"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect930);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="translate(94.637817,39.570335)"><tspan
+         x="62.519531"
+         y="-51.122018"><tspan>Cloud 0</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text934"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect936);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="translate(94.637817,162.55882)"><tspan
+         x="62.519531"
+         y="-51.122018"><tspan>Cloud 1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text940"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect942);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="translate(94.637817,282.5517)"><tspan
+         x="62.519531"
+         y="-51.122018"><tspan>Cloud 2</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect946"
+       width="59.112354"
+       height="59.112354"
+       x="-97.555641"
+       y="76.30603" />
+    <text
+       xml:space="preserve"
+       id="text952"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect954);fill:#000000;fill-opacity:1;stroke:none;"
+       x="41.285393"
+       y="0"
+       transform="translate(-233.00318,-40.547959)"><tspan
+         x="142.19336"
+         y="142.10064"><tspan
+           style="shape-inside:url(#rect954)">Workflow </tspan></tspan><tspan
+         x="142.19336"
+         y="155.32976"><tspan
+           style="shape-inside:url(#rect954)">Manager</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text956"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect958);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="translate(28.575012,25.929177)"><tspan
+         x="-118.31055"
+         y="41.276419"><tspan>localhost</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect962"
+       width="59.112354"
+       height="59.112354"
+       x="-97.555641"
+       y="150.28156" />
+    <text
+       xml:space="preserve"
+       id="text964"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect966);fill:#000000;fill-opacity:1;stroke:none;"
+       x="63.044632"
+       y="0"
+       transform="translate(-233.00318,33.427561)"><tspan
+         x="150.85304"
+         y="142.10064"><tspan
+           style="text-align:center;text-anchor:middle">Cloud </tspan></tspan><tspan
+         x="142.59808"
+         y="155.32976"><tspan
+           style="text-align:center;text-anchor:middle">Launcher</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text972"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect974);fill:#000000;fill-opacity:1;stroke:none;"
+       x="63.044632"
+       y="0"
+       transform="translate(-240.94073,83.169259)"><tspan
+         x="159.55809"
+         y="142.10064"><tspan
+           style="text-align:center;text-anchor:middle">Other </tspan></tspan><tspan
+         x="142.76772"
+         y="155.32976"><tspan
+           style="text-align:center;text-anchor:middle">Components</tspan></tspan></text>
+  </g>
+</svg>

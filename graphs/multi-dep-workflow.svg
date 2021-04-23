@@ -102,9 +102,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="650.43283"
-     inkscape:cy="685.28635"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="366.3915"
+     inkscape:cy="630.0967"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -150,8 +150,16 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(90.118383,97.36524)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M -12.168398,34.124677 41.159506,-10.216469"
+       id="path979" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M -12.168398,34.124677 41.159506,69.665063"
+       id="path981" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.85419;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.85419;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect833"
        width="38.145813"
        height="38.145813"
@@ -334,14 +342,6 @@
          x="-236.32031"
          y="37.304786"><tspan
            style="shape-inside:url(#rect959)">T1</tspan></tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M -12.168398,34.124677 41.159506,-10.216469"
-       id="path979" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M -12.168398,34.124677 41.159506,69.665063"
-       id="path981" />
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M -11.277815,187.47045 41.159506,152.69204"

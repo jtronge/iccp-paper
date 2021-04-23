@@ -7,14 +7,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="809.83197"
-   height="1072.5439"
+   width="789.83197"
+   height="1052.5439"
    version="1.1"
-   id="svg3925"
-   sodipodi:docname="blast-wf1-localhost-profile.svg"
+   id="svg3740"
+   sodipodi:docname="task-graph-one-node-google-04-23.svg"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
   <metadata
-     id="metadata3931">
+     id="metadata3746">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,7 +26,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs3929" />
+     id="defs3744" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,597 +38,600 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
-     id="namedview3927"
+     id="namedview3742"
      showgrid="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
      inkscape:zoom="1"
-     inkscape:cx="598.60241"
-     inkscape:cy="717.28479"
+     inkscape:cx="399.832"
+     inkscape:cy="731.32029"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g3923"
-     fit-margin-top="20"
-     fit-margin-left="20"
-     fit-margin-right="20"
-     fit-margin-bottom="20" />
+     inkscape:current-layer="g3738" />
   <g
-     id="g3923"
-     transform="translate(9.832,-40)">
+     id="g3738"
+     transform="translate(-0.168,-50)">
+    <g
+       transform="translate(120,1120)"
+       id="g3530" />
     <g
        transform="translate(0,50)"
-       id="g3921">
+       id="g3736">
       <text
          x="10"
          y="23"
-         id="text3717">makeblastdb</text>
-      <text
-         x="10"
-         y="325"
-         id="text3719">task-NC_009065-fasta</text>
-      <text
-         x="10"
-         y="438"
-         id="text3721">task-NC_009459-fasta</text>
-      <text
-         x="10"
-         y="589"
-         id="text3723">task-NC_011170-fasta</text>
-      <text
-         x="10"
-         y="212"
-         id="text3725">task-NC_009062-fasta</text>
-      <text
-         x="10"
-         y="476"
-         id="text3727">task-NC_010205-fasta</text>
-      <text
-         x="10"
-         y="513"
-         id="text3729">task-NC_011168-fasta</text>
-      <text
-         x="10"
-         y="136"
-         id="text3731">task-NC_009059-fasta</text>
-      <text
-         x="10"
-         y="551"
-         id="text3733">task-NC_011169-fasta</text>
-      <text
-         x="10"
-         y="626"
-         id="text3735">task-NC_011171-fasta</text>
-      <text
-         x="10"
-         y="250"
-         id="text3737">task-NC_009063-fasta</text>
-      <text
-         x="10"
-         y="363"
-         id="text3739">task-NC_009066-fasta</text>
-      <text
-         x="10"
-         y="99"
-         id="text3741">task-NC_009058-fasta</text>
-      <text
-         x="10"
-         y="287"
-         id="text3743">task-NC_009064-fasta</text>
-      <text
-         x="10"
-         y="61"
-         id="text3745">task-NC_009057-fasta</text>
-      <text
-         x="10"
-         y="702"
-         id="text3747">task-NC_011179-fasta</text>
-      <text
-         x="10"
-         y="740"
-         id="text3749">task-NC_012055-fasta</text>
-      <text
-         x="10"
-         y="853"
-         id="text3751">task-NC_013663-fasta</text>
-      <text
-         x="10"
-         y="174"
-         id="text3753">task-NC_009060-fasta</text>
-      <text
-         x="10"
-         y="890"
-         id="text3755">task-NC_013750-fasta</text>
-      <text
-         x="10"
-         y="777"
-         id="text3757">task-NC_013564-fasta</text>
-      <text
-         x="10"
-         y="664"
-         id="text3759">task-NC_011177-fasta</text>
-      <text
-         x="10"
-         y="928"
-         id="text3761">task-NC_018814-fasta</text>
-      <text
-         x="10"
-         y="966"
-         id="text3763">task-NC_018815-fasta</text>
-      <text
-         x="10"
-         y="400"
-         id="text3765">task-NC_009067-fasta</text>
+         id="text3532">makeblastdb</text>
       <text
          x="10"
          y="815"
-         id="text3767">task-NC_013577-fasta</text>
+         id="text3534">task-NC_013577-fasta</text>
+      <text
+         x="10"
+         y="551"
+         id="text3536">task-NC_011169-fasta</text>
+      <text
+         x="10"
+         y="476"
+         id="text3538">task-NC_010205-fasta</text>
+      <text
+         x="10"
+         y="740"
+         id="text3540">task-NC_012055-fasta</text>
+      <text
+         x="10"
+         y="966"
+         id="text3542">task-NC_018815-fasta</text>
+      <text
+         x="10"
+         y="626"
+         id="text3544">task-NC_011171-fasta</text>
+      <text
+         x="10"
+         y="99"
+         id="text3546">task-NC_009058-fasta</text>
+      <text
+         x="10"
+         y="589"
+         id="text3548">task-NC_011170-fasta</text>
+      <text
+         x="10"
+         y="174"
+         id="text3550">task-NC_009060-fasta</text>
+      <text
+         x="10"
+         y="400"
+         id="text3552">task-NC_009067-fasta</text>
+      <text
+         x="10"
+         y="287"
+         id="text3554">task-NC_009064-fasta</text>
+      <text
+         x="10"
+         y="513"
+         id="text3556">task-NC_011168-fasta</text>
+      <text
+         x="10"
+         y="363"
+         id="text3558">task-NC_009066-fasta</text>
+      <text
+         x="10"
+         y="250"
+         id="text3560">task-NC_009063-fasta</text>
+      <text
+         x="10"
+         y="61"
+         id="text3562">task-NC_009057-fasta</text>
+      <text
+         x="10"
+         y="702"
+         id="text3564">task-NC_011179-fasta</text>
+      <text
+         x="10"
+         y="438"
+         id="text3566">task-NC_009459-fasta</text>
+      <text
+         x="10"
+         y="890"
+         id="text3568">task-NC_013750-fasta</text>
+      <text
+         x="10"
+         y="928"
+         id="text3570">task-NC_018814-fasta</text>
+      <text
+         x="10"
+         y="212"
+         id="text3572">task-NC_009062-fasta</text>
+      <text
+         x="10"
+         y="853"
+         id="text3574">task-NC_013663-fasta</text>
+      <text
+         x="10"
+         y="664"
+         id="text3576">task-NC_011177-fasta</text>
+      <text
+         x="10"
+         y="136"
+         id="text3578">task-NC_009059-fasta</text>
+      <text
+         x="10"
+         y="777"
+         id="text3580">task-NC_013564-fasta</text>
+      <text
+         x="10"
+         y="325"
+         id="text3582">task-NC_009065-fasta</text>
       <g
          transform="translate(200)"
-         id="g3919">
+         id="g3734">
         <rect
            x="10"
            y="10"
            width="0"
            height="27"
            fill="#ff0000"
-           id="rect3769" />
+           id="rect3584" />
         <rect
            x="10"
            y="10"
-           width="20"
+           width="40"
            height="27"
            fill="#0000ff"
-           id="rect3771" />
+           id="rect3586" />
         <rect
-           x="41"
-           y="311"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3773" />
-        <rect
-           x="41"
-           y="311"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3775" />
-        <rect
-           x="64"
-           y="424"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3777" />
-        <rect
-           x="64"
-           y="424"
-           width="14"
-           height="27"
-           fill="#0000ff"
-           id="rect3779" />
-        <rect
-           x="84"
-           y="575"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3781" />
-        <rect
-           x="84"
-           y="575"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3783" />
-        <rect
-           x="106"
-           y="198"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3785" />
-        <rect
-           x="106"
-           y="198"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3787" />
-        <rect
-           x="128"
-           y="462"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3789" />
-        <rect
-           x="128"
-           y="462"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3791" />
-        <rect
-           x="150"
-           y="500"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3793" />
-        <rect
-           x="150"
-           y="500"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3795" />
-        <rect
-           x="172"
-           y="123"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3797" />
-        <rect
-           x="172"
-           y="123"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3799" />
-        <rect
-           x="193"
-           y="537"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3801" />
-        <rect
-           x="193"
-           y="537"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3803" />
-        <rect
-           x="215"
-           y="613"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3805" />
-        <rect
-           x="215"
-           y="613"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3807" />
-        <rect
-           x="237"
-           y="236"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3809" />
-        <rect
-           x="237"
-           y="236"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3811" />
-        <rect
-           x="259"
-           y="349"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3813" />
-        <rect
-           x="259"
-           y="349"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3815" />
-        <rect
-           x="281"
-           y="85"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3817" />
-        <rect
-           x="281"
-           y="85"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3819" />
-        <rect
-           x="302"
-           y="273"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3821" />
-        <rect
-           x="302"
-           y="273"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3823" />
-        <rect
-           x="324"
-           y="47"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3825" />
-        <rect
-           x="324"
-           y="47"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3827" />
-        <rect
-           x="346"
-           y="688"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3829" />
-        <rect
-           x="346"
-           y="688"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3831" />
-        <rect
-           x="368"
-           y="726"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3833" />
-        <rect
-           x="368"
-           y="726"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3835" />
-        <rect
-           x="390"
-           y="839"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3837" />
-        <rect
-           x="390"
-           y="839"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3839" />
-        <rect
-           x="411"
-           y="160"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3841" />
-        <rect
-           x="411"
-           y="160"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3843" />
-        <rect
-           x="433"
-           y="876"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3845" />
-        <rect
-           x="433"
-           y="876"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3847" />
-        <rect
-           x="455"
-           y="763"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3849" />
-        <rect
-           x="455"
-           y="763"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3851" />
-        <rect
-           x="477"
-           y="650"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3853" />
-        <rect
-           x="477"
-           y="650"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3855" />
-        <rect
-           x="498"
-           y="914"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3857" />
-        <rect
-           x="498"
-           y="914"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3859" />
-        <rect
-           x="520"
-           y="952"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3861" />
-        <rect
-           x="520"
-           y="952"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3863" />
-        <rect
-           x="542"
-           y="386"
-           width="0"
-           height="27"
-           fill="#ff0000"
-           id="rect3865" />
-        <rect
-           x="542"
-           y="386"
-           width="15"
-           height="27"
-           fill="#0000ff"
-           id="rect3867" />
-        <rect
-           x="565"
+           x="57"
            y="801"
            width="0"
            height="27"
            fill="#ff0000"
-           id="rect3869" />
+           id="rect3588" />
         <rect
-           x="565"
+           x="57"
            y="801"
-           width="14"
+           width="13"
            height="27"
            fill="#0000ff"
-           id="rect3871" />
+           id="rect3590" />
+        <rect
+           x="76"
+           y="537"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3592" />
+        <rect
+           x="76"
+           y="537"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3594" />
+        <rect
+           x="98"
+           y="462"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3596" />
+        <rect
+           x="98"
+           y="462"
+           width="15"
+           height="27"
+           fill="#0000ff"
+           id="rect3598" />
+        <rect
+           x="119"
+           y="726"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3600" />
+        <rect
+           x="119"
+           y="726"
+           width="13"
+           height="27"
+           fill="#0000ff"
+           id="rect3602" />
+        <rect
+           x="138"
+           y="952"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3604" />
+        <rect
+           x="138"
+           y="952"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3606" />
+        <rect
+           x="159"
+           y="613"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3608" />
+        <rect
+           x="159"
+           y="613"
+           width="19"
+           height="27"
+           fill="#0000ff"
+           id="rect3610" />
+        <rect
+           x="183"
+           y="85"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3612" />
+        <rect
+           x="183"
+           y="85"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3614" />
+        <rect
+           x="205"
+           y="575"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3616" />
+        <rect
+           x="205"
+           y="575"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3618" />
+        <rect
+           x="226"
+           y="160"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3620" />
+        <rect
+           x="226"
+           y="160"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3622" />
+        <rect
+           x="248"
+           y="386"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3624" />
+        <rect
+           x="248"
+           y="386"
+           width="13"
+           height="27"
+           fill="#0000ff"
+           id="rect3626" />
+        <rect
+           x="267"
+           y="273"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3628" />
+        <rect
+           x="267"
+           y="273"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3630" />
+        <rect
+           x="288"
+           y="500"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3632" />
+        <rect
+           x="288"
+           y="500"
+           width="13"
+           height="27"
+           fill="#0000ff"
+           id="rect3634" />
+        <rect
+           x="307"
+           y="349"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3636" />
+        <rect
+           x="307"
+           y="349"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3638" />
+        <rect
+           x="329"
+           y="236"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3640" />
+        <rect
+           x="329"
+           y="236"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3642" />
+        <rect
+           x="350"
+           y="47"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3644" />
+        <rect
+           x="350"
+           y="47"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3646" />
+        <rect
+           x="372"
+           y="688"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3648" />
+        <rect
+           x="372"
+           y="688"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3650" />
+        <rect
+           x="393"
+           y="424"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3652" />
+        <rect
+           x="393"
+           y="424"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3654" />
+        <rect
+           x="415"
+           y="876"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3656" />
+        <rect
+           x="415"
+           y="876"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3658" />
+        <rect
+           x="436"
+           y="914"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3660" />
+        <rect
+           x="436"
+           y="914"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3662" />
+        <rect
+           x="458"
+           y="198"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3664" />
+        <rect
+           x="458"
+           y="198"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3666" />
+        <rect
+           x="479"
+           y="839"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3668" />
+        <rect
+           x="479"
+           y="839"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3670" />
+        <rect
+           x="501"
+           y="650"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3672" />
+        <rect
+           x="501"
+           y="650"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3674" />
+        <rect
+           x="522"
+           y="123"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3676" />
+        <rect
+           x="522"
+           y="123"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3678" />
+        <rect
+           x="544"
+           y="763"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3680" />
+        <rect
+           x="544"
+           y="763"
+           width="13"
+           height="27"
+           fill="#0000ff"
+           id="rect3682" />
+        <rect
+           x="563"
+           y="311"
+           width="0"
+           height="27"
+           fill="#ff0000"
+           id="rect3684" />
+        <rect
+           x="563"
+           y="311"
+           width="16"
+           height="27"
+           fill="#0000ff"
+           id="rect3686" />
         <g
            transform="translate(0,1000)"
-           id="g3917">
+           id="g3732">
           <path
              d="M 10,0 H 580"
              stroke="#000000"
-             id="path3873" />
+             id="path3688" />
           <path
              d="M 10,0 V 6"
              stroke="#000000"
-             id="path3875" />
+             id="path3690" />
           <text
              x="6"
              y="20"
              style="font-size:13.3333px"
-             id="text3877">0</text>
+             id="text3692">0</text>
           <path
              d="M 67,0 V 6"
              stroke="#000000"
-             id="path3879" />
+             id="path3694" />
           <text
              x="63"
              y="20"
              style="font-size:13.3333px"
-             id="text3881">65</text>
+             id="text3696">105</text>
           <path
              d="M 124,0 V 6"
              stroke="#000000"
-             id="path3883" />
+             id="path3698" />
           <text
              x="119"
              y="20"
              style="font-size:13.3333px"
-             id="text3885">130</text>
+             id="text3700">211</text>
           <path
              d="M 181,0 V 6"
              stroke="#000000"
-             id="path3887" />
+             id="path3702" />
           <text
              x="177"
              y="20"
              style="font-size:13.3333px"
-             id="text3889">196</text>
+             id="text3704">317</text>
           <path
              d="M 238,0 V 6"
              stroke="#000000"
-             id="path3891" />
+             id="path3706" />
           <text
              x="233"
              y="20"
              style="font-size:13.3333px"
-             id="text3893">261</text>
+             id="text3708">423</text>
           <path
              d="M 295,0 V 6"
              stroke="#000000"
-             id="path3895" />
+             id="path3710" />
           <text
              x="291"
              y="20"
              style="font-size:13.3333px"
-             id="text3897">327</text>
+             id="text3712">529</text>
           <path
              d="M 352,0 V 6"
              stroke="#000000"
-             id="path3899" />
+             id="path3714" />
           <text
              x="348"
              y="20"
              style="font-size:13.3333px"
-             id="text3901">392</text>
+             id="text3716">635</text>
           <path
              d="M 409,0 V 6"
              stroke="#000000"
-             id="path3903" />
+             id="path3718" />
           <text
              x="404"
              y="20"
              style="font-size:13.3333px"
-             id="text3905">457</text>
+             id="text3720">741</text>
           <path
              d="M 466,0 V 6"
              stroke="#000000"
-             id="path3907" />
+             id="path3722" />
           <text
              x="462"
              y="20"
              style="font-size:13.3333px"
-             id="text3909">523</text>
+             id="text3724">847</text>
           <path
              d="M 523,0 V 6"
              stroke="#000000"
-             id="path3911" />
+             id="path3726" />
           <text
              x="518"
              y="20"
              style="font-size:13.3333px"
-             id="text3913">588</text>
+             id="text3728">953</text>
           <text
              x="200"
              y="40"
-             id="text3915">Execution time (s)</text>
+             id="text3730">Execution time (s)</text>
         </g>
       </g>
     </g>

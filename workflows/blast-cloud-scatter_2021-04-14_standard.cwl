@@ -16,8 +16,8 @@ steps:
       - {prefix: -out, valueFrom: $("databases/" + inputs.db_title)}
       baseCommand: [makeblastdb, -dbtype, nucl]
       class: CommandLineTool
-      hints:
-        DockerRequirement: {dockerPull: ncbi/blast}
+      #hints:
+      #  DockerRequirement: {dockerPull: ncbi/blast}
       inputs:
         db_title:
           inputBinding: {prefix: -title}
@@ -31,14 +31,15 @@ steps:
           type: Directory
       requirements:
         ResourceRequirement: {tmpdirMin: '10000'}
+        DockerRequirement: {dockerPull: ncbi/blast}
   sequence:
     in: {db_dir: makeblastdb/db_dir, db_title: db_title, seq_file: sequence_queries}
     out: [out]
     run:
       baseCommand: [blastn, -evalue, '1e-3', -word_size, '11', -outfmt, '0']
       class: CommandLineTool
-      hints:
-        DockerRequirement: {dockerPull: ncbi/blast}
+      #hints:
+      #  DockerRequirement: {dockerPull: ncbi/blast}
       inputs:
         db_dir:
           inputBinding: {prefix: -db, valueFrom: $(inputs.db_dir.path + "/" + inputs.db_title)}
@@ -51,5 +52,6 @@ steps:
         out: {type: stdout}
       requirements:
         ResourceRequirement: {tmpdirMin: '10000'}
+        DockerRequirement: {dockerPull: ncbi/blast}
       stdout: $(inputs.seq_file.basename + ".reference")
     scatter: seq_file

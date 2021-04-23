@@ -9,6 +9,7 @@ parser.add_argument('profiles', nargs='*', help='JSON workflow profile')
 parser.add_argument('--width', default=1000, type=int, help='width of graph')
 parser.add_argument('--height', default=800, type=int, help='height of graph')
 parser.add_argument('--padding', default=100, type=int, help='height of graph')
+parser.add_argument('--title', default='Workflow Comparison: Single Cloud vs Multi-Cloud', help='title of graph')
 args = parser.parse_args()
 
 profiles = args.profiles
@@ -17,6 +18,7 @@ graph_width = 2 * width / 3
 height = args.height
 horizontal_padding = args.padding
 vertical_padding = args.padding
+title = args.title
 
 def load_profile(profile):
     """Load a workflow profile and return the attributes."""
@@ -84,6 +86,8 @@ xscale = svgtool.ScaleLinear(domain=(0, max_time), range_=(horizontal_padding, g
 x_start = xscale.scale(0)
 x_end = xscale.scale(max_time)
 
+translate_x = 180
+
 # Create rectangles representing the runtime of each task for each workflow
 content = []
 y_pos = 0
@@ -107,16 +111,15 @@ for i, wfl in enumerate(wfls):
     # Increment the y position
     y_pos += len(resource_ids) * 32
     # Append the total time
-    rects.append(svgtool.text('%0.2fs in total' % (wfl['end_time'] - wfl['start_time'],), x=xscale.scale(end_time - start_time), y=y_pos - len(resource_ids) * 16))
-    translate_x = 100
+    rects.append(svgtool.text('%0.2fs in total' % (wfl['end_time'] - wfl['start_time'],), x=xscale.scale(end_time - start_time), y=y_pos - len(resource_ids) * 16, style='font-size:16pt;'))
     wfl_content = [svgtool.g(transform=svgtool.translate(translate_x, 0), content=rects)]
-    wfl_content.append(svgtool.text('Run %i' % (i,), x=0, y=y_pos - len(resource_ids) * 16, style='font-weight:bold;font-size:14pt;'))
+    wfl_content.append(svgtool.text('Run %i' % (i,), x=0, y=y_pos - len(resource_ids) * 16, style='font-weight:bold;font-size:20pt;'))
 
     # Add the resource labels
     resource_labels = []
     for id_ in resource_ids:
         name = resource_ids[id_]
-        resource_labels.append(svgtool.text(name, x=x_start - 10 - 7.5 * len(name), y=yscale.scale(id_) + yscale.bandwidth * 0.6))
+        resource_labels.append(svgtool.text(name, x=x_start - 10, y=yscale.scale(id_) + yscale.bandwidth * 0.9, style='font-size:16pt;text-anchor:end;'))
     wfl_content.append(svgtool.g(transform=svgtool.translate(translate_x, 0), content=resource_labels))
     wfl_content.append(svgtool.path(d=[svgtool.path_move_to(0, y_pos - 6), svgtool.path_line_to(x_end + translate_x, y_pos - 6)], style='stroke: #000000; stroke-width: 1px;'))
 
@@ -126,5 +129,5 @@ for i, wfl in enumerate(wfls):
 
 # Add a title
 content = [svgtool.g(transform=svgtool.translate(0, 40), content=content)]
-content.append(svgtool.text('Workflow Comparison: Single Cloud vs Multi-Cloud', x=100, y=30, style='font-size:18pt;'))
+content.append(svgtool.text(title, x=(graph_width + translate_x) / 2.0, y=30, style='font-size:30pt;text-anchor:middle;'))
 print(svgtool.svg(width=width, height=height, content=content))
