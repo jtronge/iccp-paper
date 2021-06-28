@@ -182,7 +182,11 @@ bee_steps = {
                            'reference -dbtype nucl -out '
                            'databases/reference',
             'class': 'CommandLineTool',
-            'hints': {'DockerRequirement': {'dockerImageId': CH_CTR}},
+            'hints': {
+                'DockerRequirement': {'dockerImageId': CH_CTR},
+                'Push': {'fnames': '|'.join([os.path.dirname(DB_NAME)])},
+                'Pull': {'fnames': '|'.join([os.path.basename(REF_SEQUENCE)])},
+            },
             'inputs': {'sequence_file': {'type': 'string'}},
             'outputs': {'db_dir': {'type': 'string'}},
         },
@@ -191,12 +195,14 @@ bee_steps = {
     },
 }
 # Extra BEE requirements
+"""
 extra_requirements = {
     'makeblastdb': {
         'push': [os.path.dirname(DB_NAME)],
         'pull': [os.path.basename(REF_SEQUENCE)],
     }
 }
+"""
 
 # Save files with a date string
 date_str = datetime.datetime.now().strftime('%F')
@@ -226,7 +232,9 @@ for seq_path in os.listdir(SEQUENCE_DIR):
                            f'{task_name}.reference',
             'class': 'CommandLineTool',
             'hints': {
-                'DockerRequirement': {'dockerImageId': CH_CTR}
+                'DockerRequirement': {'dockerImageId': CH_CTR},
+                'Push': {'fnames': '|'.join([f'{task_name}.reference'])},
+                'Pull': {'fnames': '|'.join([os.path.dirname(DB_NAME), seq_path])}
             },
             'inputs': {'db_dir': {'type': 'string'}},
             'outputs': {'out': {'type': 'string'}},
@@ -234,10 +242,10 @@ for seq_path in os.listdir(SEQUENCE_DIR):
         'in': {'db_dir': 'makeblastdb/db_dir'},
         'out': ['out'],
     }
-    extra_requirements[task_name] = {
-        'push': [f'{task_name}.reference'],
-        'pull': [os.path.dirname(DB_NAME), seq_path],
-    }
+    #extra_requirements[task_name] = {
+    #    'push': [f'{task_name}.reference'],
+    #    'pull': [os.path.dirname(DB_NAME), seq_path],
+    #}
 
 # Write the input YAML file
 fname = f'{PREFIX}_{date_str}_inputs.yml'
@@ -264,7 +272,9 @@ with open(os.path.join(OUTPUT_DIR, fname), 'w') as fp:
     print('# -*- mode: YAML; -*-', file=fp)
     print('# Generated on', date_str, file=fp)
     yaml.dump(bee_wfl, fp)
+"""
 # Write the extra requirements file
 fname = f'{PREFIX}_{date_str}_bee.json'
 with open(os.path.join(OUTPUT_DIR, fname), 'w') as fp:
     json.dump(extra_requirements, fp, indent=4)
+"""
