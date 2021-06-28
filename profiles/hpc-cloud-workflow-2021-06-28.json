@@ -1,0 +1,159 @@
+{
+    "state_changes": [
+        {
+            "task_id": "86a84dc2-56ad-46e0-9369-e38caa20c53a",
+            "task_name": "hpc-task1",
+            "next_state": "PENDING",
+            "timestamp": 1624888377
+        },
+        {
+            "task_id": "f829158d-6079-49f3-a86e-f28d81670559",
+            "task_name": "cloud-task1",
+            "next_state": "PENDING",
+            "timestamp": 1624888378
+        },
+        {
+            "task_id": "f829158d-6079-49f3-a86e-f28d81670559",
+            "task_name": "cloud-task1",
+            "next_state": "RUNNING",
+            "timestamp": 1624888378
+        },
+        {
+            "task_id": "86a84dc2-56ad-46e0-9369-e38caa20c53a",
+            "task_name": "hpc-task1",
+            "next_state": "RUNNING",
+            "timestamp": 1624888381
+        },
+        {
+            "task_id": "86a84dc2-56ad-46e0-9369-e38caa20c53a",
+            "task_name": "hpc-task1",
+            "next_state": "COMPLETED",
+            "timestamp": 1624888391
+        },
+        {
+            "task_id": "f829158d-6079-49f3-a86e-f28d81670559",
+            "task_name": "cloud-task1",
+            "next_state": "COMPLETED",
+            "timestamp": 1624888403
+        },
+        {
+            "task_id": "7b0b5608-639c-4582-ad38-65eef495ba60",
+            "task_name": "hpc-task2",
+            "next_state": "PENDING",
+            "timestamp": 1624888407
+        },
+        {
+            "task_id": "7b0b5608-639c-4582-ad38-65eef495ba60",
+            "task_name": "hpc-task2",
+            "next_state": "RUNNING",
+            "timestamp": 1624888411
+        },
+        {
+            "task_id": "7b0b5608-639c-4582-ad38-65eef495ba60",
+            "task_name": "hpc-task2",
+            "next_state": "COMPLETED",
+            "timestamp": 1624888431
+        },
+        {
+            "task_id": "1fdab15b-aa00-46cd-bdcd-ede883f30627",
+            "task_name": "cloud-task2",
+            "next_state": "PENDING",
+            "timestamp": 1624888433
+        },
+        {
+            "task_id": "1fdab15b-aa00-46cd-bdcd-ede883f30627",
+            "task_name": "cloud-task2",
+            "next_state": "RUNNING",
+            "timestamp": 1624888433
+        },
+        {
+            "task_id": "1fdab15b-aa00-46cd-bdcd-ede883f30627",
+            "task_name": "cloud-task2",
+            "next_state": "COMPLETED",
+            "timestamp": 1624888453
+        }
+    ],
+    "scheduling_results": [
+        {
+            "tasks": {
+                "86a84dc2-56ad-46e0-9369-e38caa20c53a": {
+                    "affinity": "localhost:5129",
+                    "deps": []
+                },
+                "f829158d-6079-49f3-a86e-f28d81670559": {
+                    "affinity": "localhost:5055",
+                    "deps": []
+                }
+            },
+            "resource_ids": {
+                "localhost:5129": "local_tm",
+                "localhost:5055": "google-0"
+            },
+            "resources": [
+                "localhost:5129",
+                "localhost:5055"
+            ],
+            "allocations": {
+                "86a84dc2-56ad-46e0-9369-e38caa20c53a": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "f829158d-6079-49f3-a86e-f28d81670559": {
+                    "time_slot": 0,
+                    "resource": "localhost:5055"
+                }
+            },
+            "timestamp": 1624888374
+        },
+        {
+            "tasks": {
+                "7b0b5608-639c-4582-ad38-65eef495ba60": {
+                    "affinity": "localhost:5129",
+                    "deps": [
+                        "86a84dc2-56ad-46e0-9369-e38caa20c53a"
+                    ]
+                }
+            },
+            "resource_ids": {
+                "localhost:5129": "local_tm",
+                "localhost:5055": "google-0"
+            },
+            "resources": [
+                "localhost:5129",
+                "localhost:5055"
+            ],
+            "allocations": {
+                "7b0b5608-639c-4582-ad38-65eef495ba60": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                }
+            },
+            "timestamp": 1624888403
+        },
+        {
+            "tasks": {
+                "1fdab15b-aa00-46cd-bdcd-ede883f30627": {
+                    "affinity": "localhost:5055",
+                    "deps": [
+                        "f829158d-6079-49f3-a86e-f28d81670559"
+                    ]
+                }
+            },
+            "resource_ids": {
+                "localhost:5129": "local_tm",
+                "localhost:5055": "google-0"
+            },
+            "resources": [
+                "localhost:5129",
+                "localhost:5055"
+            ],
+            "allocations": {
+                "1fdab15b-aa00-46cd-bdcd-ede883f30627": {
+                    "time_slot": 0,
+                    "resource": "localhost:5055"
+                }
+            },
+            "timestamp": 1624888432
+        }
+    ]
+}

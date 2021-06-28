@@ -1,5 +1,5 @@
 # -*- mode: YAML; -*-
-# Generated on 2021-04-08
+# Generated on 2021-06-17
 class: Workflow
 cwlVersion: v1.0
 inputs: {db_title: string, sequence_file: File, sequence_queries: 'File[]'}

@@ -70,17 +70,8 @@
 	# profiles/two-node-chameleon-google.json \
 	#> graphs/two-node-chameleon-google.svg
 
-python ./scripts/task_execution_time.py \
-	--height 1200 \
-	--graph-height 1000 \
-	--title "Two Nodes - ChameleonCloud + Google" \
-	profiles/two-node-chameleon-google.json \
-	> graphs/task-graph-two-nodes-chameleoncloud-google-04-23.svg
 
 python ./scripts/task_execution_time.py \
-	--height 1200 \
-	--graph-height 1000 \
-	--title "Four Nodes - ChameleonCloud + Google" \
-	profiles/four-node-profile-chameleon-google.json \
-	> graphs/task-graph-four-nodes-chameleoncloud-google-04-23.svg
-	# profiles/.json
+	--title "HPC + Google Compute Engine" \
+	profiles/hpc-cloud-workflow-2021-06-28.json \
+	> graphs/hpc-cloud-workflow-2021-06-28.svg

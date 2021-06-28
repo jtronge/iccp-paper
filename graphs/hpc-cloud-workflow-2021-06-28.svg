@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500">
+<g transform="None">
+<text x="200" y="30" style="font-size:20pt;">HPC + Google Compute Engine</text>
+<g transform="translate(120 320)">
+<text x="0" y="20" style="">PENDING</text>
+<rect x="84" y="0" width="40" height="40" fill="#ff0000">
+</rect>
+<text x="150" y="20" style="">RUNNING</text>
+<rect x="234" y="0" width="40" height="40" fill="#0000ff">
+</rect>
+</g>
+<g transform="translate(0 50)">
+<text x="10" y="117" style="">hpc-task1</text>
+<text x="10" y="27" style="">cloud-task1</text>
+<text x="10" y="162" style="">hpc-task2</text>
+<text x="10" y="72" style="">cloud-task2</text>
+<g transform="translate(110 0)">
+<rect x="10" y="100" width="30" height="35" fill="#ff0000">
+</rect>
+<rect x="40" y="100" width="75" height="35" fill="#0000ff">
+</rect>
+<rect x="17" y="10" width="0" height="35" fill="#ff0000">
+</rect>
+<rect x="17" y="10" width="187" height="35" fill="#0000ff">
+</rect>
+<rect x="235" y="145" width="30" height="35" fill="#ff0000">
+</rect>
+<rect x="265" y="145" width="150" height="35" fill="#0000ff">
+</rect>
+<rect x="430" y="55" width="0" height="35" fill="#ff0000">
+</rect>
+<rect x="430" y="55" width="150" height="35" fill="#0000ff">
+</rect>
+<g transform="translate(0 200)">
+<path d="M10,0 L580,0" stroke="#000000"></path>
+<path d="M10.0,0 L10.0,6" stroke="#000000"></path><text x="6" y="20" style="font-size: 10pt">0</text>
+<path d="M66.99999928474426,0 L66.99999928474426,6" stroke="#000000"></path><text x="62" y="20" style="font-size: 10pt">7</text>
+<path d="M124.00000035762787,0 L124.00000035762787,6" stroke="#000000"></path><text x="120" y="20" style="font-size: 10pt">15</text>
+<path d="M180.99999964237213,0 L180.99999964237213,6" stroke="#000000"></path><text x="176" y="20" style="font-size: 10pt">22</text>
+<path d="M238.00000071525574,0 L238.00000071525574,6" stroke="#000000"></path><text x="234" y="20" style="font-size: 10pt">30</text>
+<path d="M295.0,0 L295.0,6" stroke="#000000"></path><text x="291" y="20" style="font-size: 10pt">38</text>
+<path d="M351.99999928474426,0 L351.99999928474426,6" stroke="#000000"></path><text x="347" y="20" style="font-size: 10pt">45</text>
+<path d="M409.00000035762787,0 L409.00000035762787,6" stroke="#000000"></path><text x="405" y="20" style="font-size: 10pt">53</text>
+<path d="M465.99999964237213,0 L465.99999964237213,6" stroke="#000000"></path><text x="461" y="20" style="font-size: 10pt">60</text>
+<path d="M523.0000007152557,0 L523.0000007152557,6" stroke="#000000"></path><text x="519" y="20" style="font-size: 10pt">68</text>
+<text x="199" y="40" style="">Execution time (s)</text>
+</g>
+</g>
+</g>
+</g>
+</svg>
+
