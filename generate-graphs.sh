@@ -78,5 +78,7 @@ python ./scripts/task_execution_time.py \
 
 python ./scripts/task_execution_time.py \
 	--title "BLAST HPC Only Run" \
+	--height 1200 \
+	--graph-height 1000 \
 	profiles/blast-run-one-resource-2021-06-29.json \
 	> graphs/blast-run-one-resource-2021-06-29.svg

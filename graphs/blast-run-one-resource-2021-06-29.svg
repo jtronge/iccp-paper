@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200">
 <g transform="None">
 <text x="200" y="30" style="font-size:20pt;">BLAST HPC Only Run</text>
-<g transform="translate(120 320)">
+<g transform="translate(120 1120)">
 <text x="0" y="20" style="">COMPLETING</text>
 <rect x="120" y="0" width="40" height="40" fill="#ff0000">
 </rect>
@@ -13,102 +13,102 @@
 </rect>
 </g>
 <g transform="translate(0 50)">
-<text x="10" y="8" style="">makeblastdb</text>
-<text x="10" y="174" style="">task-NC_018814-fasta</text>
-<text x="10" y="133" style="">task-NC_011179-fasta</text>
-<text x="10" y="43" style="">task-NC_009062-fasta</text>
-<text x="10" y="77" style="">task-NC_009067-fasta</text>
-<text x="10" y="160" style="">task-NC_013663-fasta</text>
-<text x="10" y="91" style="">task-NC_010205-fasta</text>
-<text x="10" y="153" style="">task-NC_013577-fasta</text>
-<text x="10" y="119" style="">task-NC_011171-fasta</text>
-<text x="10" y="29" style="">task-NC_009059-fasta</text>
-<text x="10" y="167" style="">task-NC_013750-fasta</text>
-<text x="10" y="36" style="">task-NC_009060-fasta</text>
-<text x="10" y="56" style="">task-NC_009064-fasta</text>
-<text x="10" y="140" style="">task-NC_012055-fasta</text>
-<text x="10" y="22" style="">task-NC_009058-fasta</text>
-<text x="10" y="126" style="">task-NC_011177-fasta</text>
-<text x="10" y="84" style="">task-NC_009459-fasta</text>
-<text x="10" y="15" style="">task-NC_009057-fasta</text>
-<text x="10" y="50" style="">task-NC_009063-fasta</text>
-<text x="10" y="98" style="">task-NC_011168-fasta</text>
-<text x="10" y="181" style="">task-NC_018815-fasta</text>
-<text x="10" y="70" style="">task-NC_009066-fasta</text>
-<text x="10" y="146" style="">task-NC_013564-fasta</text>
-<text x="10" y="105" style="">task-NC_011169-fasta</text>
-<text x="10" y="112" style="">task-NC_011170-fasta</text>
-<text x="10" y="63" style="">task-NC_009065-fasta</text>
+<text x="10" y="23" style="">makeblastdb</text>
+<text x="10" y="928" style="">task-NC_018814-fasta</text>
+<text x="10" y="702" style="">task-NC_011179-fasta</text>
+<text x="10" y="212" style="">task-NC_009062-fasta</text>
+<text x="10" y="400" style="">task-NC_009067-fasta</text>
+<text x="10" y="853" style="">task-NC_013663-fasta</text>
+<text x="10" y="476" style="">task-NC_010205-fasta</text>
+<text x="10" y="815" style="">task-NC_013577-fasta</text>
+<text x="10" y="626" style="">task-NC_011171-fasta</text>
+<text x="10" y="136" style="">task-NC_009059-fasta</text>
+<text x="10" y="890" style="">task-NC_013750-fasta</text>
+<text x="10" y="174" style="">task-NC_009060-fasta</text>
+<text x="10" y="287" style="">task-NC_009064-fasta</text>
+<text x="10" y="740" style="">task-NC_012055-fasta</text>
+<text x="10" y="99" style="">task-NC_009058-fasta</text>
+<text x="10" y="664" style="">task-NC_011177-fasta</text>
+<text x="10" y="438" style="">task-NC_009459-fasta</text>
+<text x="10" y="61" style="">task-NC_009057-fasta</text>
+<text x="10" y="250" style="">task-NC_009063-fasta</text>
+<text x="10" y="513" style="">task-NC_011168-fasta</text>
+<text x="10" y="966" style="">task-NC_018815-fasta</text>
+<text x="10" y="363" style="">task-NC_009066-fasta</text>
+<text x="10" y="777" style="">task-NC_013564-fasta</text>
+<text x="10" y="551" style="">task-NC_011169-fasta</text>
+<text x="10" y="589" style="">task-NC_011170-fasta</text>
+<text x="10" y="325" style="">task-NC_009065-fasta</text>
 <g transform="translate(200 0)">
-<rect x="10" y="10" width="0" height="-3" fill="#0000ff">
+<rect x="10" y="10" width="0" height="27" fill="#0000ff">
 </rect>
-<rect x="10" y="10" width="235" height="-3" fill="#ff0000">
+<rect x="10" y="10" width="235" height="27" fill="#ff0000">
 </rect>
-<rect x="279" y="176" width="208" height="-3" fill="#0000ff">
+<rect x="279" y="914" width="208" height="27" fill="#0000ff">
 </rect>
-<rect x="287" y="134" width="201" height="-3" fill="#0000ff">
+<rect x="287" y="688" width="201" height="27" fill="#0000ff">
 </rect>
-<rect x="298" y="44" width="193" height="-3" fill="#0000ff">
+<rect x="298" y="198" width="193" height="27" fill="#0000ff">
 </rect>
-<rect x="306" y="79" width="186" height="-3" fill="#0000ff">
+<rect x="306" y="386" width="186" height="27" fill="#0000ff">
 </rect>
-<rect x="314" y="162" width="182" height="-3" fill="#0000ff">
+<rect x="314" y="839" width="182" height="27" fill="#0000ff">
 </rect>
-<rect x="325" y="93" width="171" height="-3" fill="#0000ff">
+<rect x="325" y="462" width="171" height="27" fill="#0000ff">
 </rect>
-<rect x="333" y="155" width="163" height="-3" fill="#0000ff">
+<rect x="333" y="801" width="163" height="27" fill="#0000ff">
 </rect>
-<rect x="340" y="120" width="159" height="-3" fill="#0000ff">
+<rect x="340" y="613" width="159" height="27" fill="#0000ff">
 </rect>
-<rect x="348" y="30" width="151" height="-3" fill="#0000ff">
+<rect x="348" y="123" width="151" height="27" fill="#0000ff">
 </rect>
-<rect x="359" y="169" width="144" height="-3" fill="#0000ff">
+<rect x="359" y="876" width="144" height="27" fill="#0000ff">
 </rect>
-<rect x="367" y="37" width="136" height="-3" fill="#0000ff">
+<rect x="367" y="160" width="136" height="27" fill="#0000ff">
 </rect>
-<rect x="504" y="37" width="19" height="-3" fill="#ff0000">
+<rect x="504" y="160" width="19" height="27" fill="#ff0000">
 </rect>
-<rect x="374" y="58" width="129" height="-3" fill="#0000ff">
+<rect x="374" y="273" width="129" height="27" fill="#0000ff">
 </rect>
-<rect x="382" y="141" width="125" height="-3" fill="#0000ff">
+<rect x="382" y="726" width="125" height="27" fill="#0000ff">
 </rect>
-<rect x="393" y="23" width="113" height="-3" fill="#0000ff">
+<rect x="393" y="85" width="113" height="27" fill="#0000ff">
 </rect>
-<rect x="401" y="127" width="106" height="-3" fill="#0000ff">
+<rect x="401" y="650" width="106" height="27" fill="#0000ff">
 </rect>
-<rect x="409" y="86" width="102" height="-3" fill="#0000ff">
+<rect x="409" y="424" width="102" height="27" fill="#0000ff">
 </rect>
-<rect x="416" y="16" width="95" height="-3" fill="#0000ff">
+<rect x="416" y="47" width="95" height="27" fill="#0000ff">
 </rect>
-<rect x="424" y="51" width="87" height="-3" fill="#0000ff">
+<rect x="424" y="236" width="87" height="27" fill="#0000ff">
 </rect>
-<rect x="435" y="100" width="79" height="-3" fill="#0000ff">
+<rect x="435" y="500" width="79" height="27" fill="#0000ff">
 </rect>
-<rect x="443" y="183" width="72" height="-3" fill="#0000ff">
+<rect x="443" y="952" width="72" height="27" fill="#0000ff">
 </rect>
-<rect x="515" y="183" width="11" height="-3" fill="#ff0000">
+<rect x="515" y="952" width="11" height="27" fill="#ff0000">
 </rect>
-<rect x="450" y="72" width="64" height="-3" fill="#0000ff">
+<rect x="450" y="349" width="64" height="27" fill="#0000ff">
 </rect>
-<rect x="515" y="72" width="26" height="-3" fill="#ff0000">
+<rect x="515" y="349" width="26" height="27" fill="#ff0000">
 </rect>
-<rect x="462" y="148" width="53" height="-3" fill="#0000ff">
+<rect x="462" y="763" width="53" height="27" fill="#0000ff">
 </rect>
-<rect x="515" y="148" width="45" height="-3" fill="#ff0000">
+<rect x="515" y="763" width="45" height="27" fill="#ff0000">
 </rect>
-<rect x="469" y="106" width="49" height="-3" fill="#0000ff">
+<rect x="469" y="537" width="49" height="27" fill="#0000ff">
 </rect>
-<rect x="519" y="106" width="45" height="-3" fill="#ff0000">
+<rect x="519" y="537" width="45" height="27" fill="#ff0000">
 </rect>
-<rect x="481" y="113" width="38" height="-3" fill="#0000ff">
+<rect x="481" y="575" width="38" height="27" fill="#0000ff">
 </rect>
-<rect x="519" y="113" width="45" height="-3" fill="#ff0000">
+<rect x="519" y="575" width="45" height="27" fill="#ff0000">
 </rect>
-<rect x="488" y="65" width="30" height="-3" fill="#0000ff">
+<rect x="488" y="311" width="30" height="27" fill="#0000ff">
 </rect>
-<rect x="519" y="65" width="60" height="-3" fill="#ff0000">
+<rect x="519" y="311" width="60" height="27" fill="#ff0000">
 </rect>
-<g transform="translate(0 200)">
+<g transform="translate(0 1000)">
 <path d="M10,0 L580,0" stroke="#000000"></path>
 <path d="M10.0,0 L10.0,6" stroke="#000000"></path><text x="6" y="20" style="font-size: 10pt">0</text>
 <path d="M67.0,0 L67.0,6" stroke="#000000"></path><text x="63" y="20" style="font-size: 10pt">15</text>
