@@ -1,0 +1,624 @@
+{
+    "state_changes": [
+        {
+            "task_id": "ad863684-20e2-4a4c-ab7c-26115d94c8b0",
+            "task_name": "makeblastdb",
+            "next_state": "PENDING",
+            "timestamp": 1624991579
+        },
+        {
+            "task_id": "ad863684-20e2-4a4c-ab7c-26115d94c8b0",
+            "task_name": "makeblastdb",
+            "next_state": "RUNNING",
+            "timestamp": 1624991579
+        },
+        {
+            "task_id": "ad863684-20e2-4a4c-ab7c-26115d94c8b0",
+            "task_name": "makeblastdb",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991641
+        },
+        {
+            "task_id": "05a4f0b0-2da5-4527-9b0e-50a908e885f5",
+            "task_name": "task-NC_018814-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991650
+        },
+        {
+            "task_id": "bef522d6-54a6-4f8f-9b2e-8d2ca0bc25f6",
+            "task_name": "task-NC_011179-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991652
+        },
+        {
+            "task_id": "0fdef835-c5d9-4e7e-8d71-e9a21bcba614",
+            "task_name": "task-NC_009062-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991655
+        },
+        {
+            "task_id": "67da9a6b-d8b7-431d-8d81-ee5d785b70d1",
+            "task_name": "task-NC_009067-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991657
+        },
+        {
+            "task_id": "60af6f1d-b08a-45ea-bdc2-6adae8133203",
+            "task_name": "task-NC_013663-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991659
+        },
+        {
+            "task_id": "1c54787c-1347-4815-a32e-d6db858a6ac8",
+            "task_name": "task-NC_010205-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991662
+        },
+        {
+            "task_id": "25b1c2ad-75c0-4dcf-aeb2-0332103d0e9d",
+            "task_name": "task-NC_013577-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991664
+        },
+        {
+            "task_id": "10102572-6a18-423c-83fd-9505e73783df",
+            "task_name": "task-NC_011171-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991666
+        },
+        {
+            "task_id": "5c1f9fc4-c947-493b-839c-cc5d9dc4e647",
+            "task_name": "task-NC_009059-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991668
+        },
+        {
+            "task_id": "f1af6201-bc8d-433c-b3b8-e93f2b83ac81",
+            "task_name": "task-NC_013750-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991671
+        },
+        {
+            "task_id": "cb6df1f4-3c09-4228-ba5b-fa7ce02231a4",
+            "task_name": "task-NC_009060-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991673
+        },
+        {
+            "task_id": "6c8a6a10-f794-4469-9289-54168b263395",
+            "task_name": "task-NC_009064-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991675
+        },
+        {
+            "task_id": "7ee686de-a46c-4351-9a68-3ad350b7880e",
+            "task_name": "task-NC_012055-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991677
+        },
+        {
+            "task_id": "02420b52-9474-4a46-bdbd-ab1d9d1e1f20",
+            "task_name": "task-NC_009058-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991680
+        },
+        {
+            "task_id": "adc1462c-0dd7-499d-8619-897ca5b3ae02",
+            "task_name": "task-NC_011177-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991682
+        },
+        {
+            "task_id": "4a7102ca-4772-4990-a7eb-d6c0a2ee1479",
+            "task_name": "task-NC_009459-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991684
+        },
+        {
+            "task_id": "dfb313d4-5743-407f-98ac-0683c475570c",
+            "task_name": "task-NC_009057-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991686
+        },
+        {
+            "task_id": "9b949aa1-4eb6-4d64-9b06-1809cdc0f1ff",
+            "task_name": "task-NC_009063-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991688
+        },
+        {
+            "task_id": "e46f1292-d706-4e61-9cd3-a19c79f1e5e6",
+            "task_name": "task-NC_011168-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991691
+        },
+        {
+            "task_id": "8de20068-26fb-47f3-b025-2f86145aad59",
+            "task_name": "task-NC_018815-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991693
+        },
+        {
+            "task_id": "d9d59f61-a6ec-46eb-b8e8-a4199d0b44be",
+            "task_name": "task-NC_009066-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991695
+        },
+        {
+            "task_id": "3350dd56-e13e-4f0b-b0c1-2d642149d9e9",
+            "task_name": "task-NC_013564-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991698
+        },
+        {
+            "task_id": "a9f22c49-4090-4ddd-814b-cc062f5ba1ae",
+            "task_name": "task-NC_011169-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991700
+        },
+        {
+            "task_id": "4ad5b982-c00d-4a64-ba0a-40d839551639",
+            "task_name": "task-NC_011170-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991703
+        },
+        {
+            "task_id": "dc5b3b05-3394-4c65-a337-c7a4a6ce4cea",
+            "task_name": "task-NC_009065-fasta",
+            "next_state": "PENDING",
+            "timestamp": 1624991705
+        },
+        {
+            "task_id": "05a4f0b0-2da5-4527-9b0e-50a908e885f5",
+            "task_name": "task-NC_018814-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991705
+        },
+        {
+            "task_id": "bef522d6-54a6-4f8f-9b2e-8d2ca0bc25f6",
+            "task_name": "task-NC_011179-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991705
+        },
+        {
+            "task_id": "0fdef835-c5d9-4e7e-8d71-e9a21bcba614",
+            "task_name": "task-NC_009062-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991706
+        },
+        {
+            "task_id": "67da9a6b-d8b7-431d-8d81-ee5d785b70d1",
+            "task_name": "task-NC_009067-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991706
+        },
+        {
+            "task_id": "60af6f1d-b08a-45ea-bdc2-6adae8133203",
+            "task_name": "task-NC_013663-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991707
+        },
+        {
+            "task_id": "1c54787c-1347-4815-a32e-d6db858a6ac8",
+            "task_name": "task-NC_010205-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991707
+        },
+        {
+            "task_id": "25b1c2ad-75c0-4dcf-aeb2-0332103d0e9d",
+            "task_name": "task-NC_013577-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991707
+        },
+        {
+            "task_id": "10102572-6a18-423c-83fd-9505e73783df",
+            "task_name": "task-NC_011171-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991708
+        },
+        {
+            "task_id": "5c1f9fc4-c947-493b-839c-cc5d9dc4e647",
+            "task_name": "task-NC_009059-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991708
+        },
+        {
+            "task_id": "f1af6201-bc8d-433c-b3b8-e93f2b83ac81",
+            "task_name": "task-NC_013750-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991709
+        },
+        {
+            "task_id": "cb6df1f4-3c09-4228-ba5b-fa7ce02231a4",
+            "task_name": "task-NC_009060-fasta",
+            "next_state": "COMPLETING",
+            "timestamp": 1624991709
+        },
+        {
+            "task_id": "6c8a6a10-f794-4469-9289-54168b263395",
+            "task_name": "task-NC_009064-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991709
+        },
+        {
+            "task_id": "7ee686de-a46c-4351-9a68-3ad350b7880e",
+            "task_name": "task-NC_012055-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991710
+        },
+        {
+            "task_id": "02420b52-9474-4a46-bdbd-ab1d9d1e1f20",
+            "task_name": "task-NC_009058-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991710
+        },
+        {
+            "task_id": "adc1462c-0dd7-499d-8619-897ca5b3ae02",
+            "task_name": "task-NC_011177-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991710
+        },
+        {
+            "task_id": "4a7102ca-4772-4990-a7eb-d6c0a2ee1479",
+            "task_name": "task-NC_009459-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991711
+        },
+        {
+            "task_id": "dfb313d4-5743-407f-98ac-0683c475570c",
+            "task_name": "task-NC_009057-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991711
+        },
+        {
+            "task_id": "9b949aa1-4eb6-4d64-9b06-1809cdc0f1ff",
+            "task_name": "task-NC_009063-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991711
+        },
+        {
+            "task_id": "e46f1292-d706-4e61-9cd3-a19c79f1e5e6",
+            "task_name": "task-NC_011168-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991712
+        },
+        {
+            "task_id": "8de20068-26fb-47f3-b025-2f86145aad59",
+            "task_name": "task-NC_018815-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1624991712
+        },
+        {
+            "task_id": "d9d59f61-a6ec-46eb-b8e8-a4199d0b44be",
+            "task_name": "task-NC_009066-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1624991712
+        },
+        {
+            "task_id": "3350dd56-e13e-4f0b-b0c1-2d642149d9e9",
+            "task_name": "task-NC_013564-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1624991712
+        },
+        {
+            "task_id": "a9f22c49-4090-4ddd-814b-cc062f5ba1ae",
+            "task_name": "task-NC_011169-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1624991713
+        },
+        {
+            "task_id": "4ad5b982-c00d-4a64-ba0a-40d839551639",
+            "task_name": "task-NC_011170-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1624991713
+        },
+        {
+            "task_id": "dc5b3b05-3394-4c65-a337-c7a4a6ce4cea",
+            "task_name": "task-NC_009065-fasta",
+            "next_state": "RUNNING",
+            "timestamp": 1624991713
+        },
+        {
+            "task_id": "cb6df1f4-3c09-4228-ba5b-fa7ce02231a4",
+            "task_name": "task-NC_009060-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991714
+        },
+        {
+            "task_id": "8de20068-26fb-47f3-b025-2f86145aad59",
+            "task_name": "task-NC_018815-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991715
+        },
+        {
+            "task_id": "d9d59f61-a6ec-46eb-b8e8-a4199d0b44be",
+            "task_name": "task-NC_009066-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991719
+        },
+        {
+            "task_id": "3350dd56-e13e-4f0b-b0c1-2d642149d9e9",
+            "task_name": "task-NC_013564-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991724
+        },
+        {
+            "task_id": "a9f22c49-4090-4ddd-814b-cc062f5ba1ae",
+            "task_name": "task-NC_011169-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991725
+        },
+        {
+            "task_id": "4ad5b982-c00d-4a64-ba0a-40d839551639",
+            "task_name": "task-NC_011170-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991725
+        },
+        {
+            "task_id": "dc5b3b05-3394-4c65-a337-c7a4a6ce4cea",
+            "task_name": "task-NC_009065-fasta",
+            "next_state": "COMPLETED",
+            "timestamp": 1624991729
+        }
+    ],
+    "scheduling_results": [
+        {
+            "tasks": {
+                "ad863684-20e2-4a4c-ab7c-26115d94c8b0": {
+                    "deps": []
+                }
+            },
+            "resource_ids": {
+                "localhost:5129": "local_tm"
+            },
+            "resources": [
+                "localhost:5129"
+            ],
+            "allocations": {
+                "ad863684-20e2-4a4c-ab7c-26115d94c8b0": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                }
+            },
+            "timestamp": 1624991511
+        },
+        {
+            "tasks": {
+                "05a4f0b0-2da5-4527-9b0e-50a908e885f5": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "bef522d6-54a6-4f8f-9b2e-8d2ca0bc25f6": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "0fdef835-c5d9-4e7e-8d71-e9a21bcba614": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "67da9a6b-d8b7-431d-8d81-ee5d785b70d1": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "60af6f1d-b08a-45ea-bdc2-6adae8133203": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "1c54787c-1347-4815-a32e-d6db858a6ac8": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "25b1c2ad-75c0-4dcf-aeb2-0332103d0e9d": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "10102572-6a18-423c-83fd-9505e73783df": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "5c1f9fc4-c947-493b-839c-cc5d9dc4e647": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "f1af6201-bc8d-433c-b3b8-e93f2b83ac81": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "cb6df1f4-3c09-4228-ba5b-fa7ce02231a4": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "6c8a6a10-f794-4469-9289-54168b263395": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "7ee686de-a46c-4351-9a68-3ad350b7880e": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "02420b52-9474-4a46-bdbd-ab1d9d1e1f20": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "adc1462c-0dd7-499d-8619-897ca5b3ae02": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "4a7102ca-4772-4990-a7eb-d6c0a2ee1479": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "dfb313d4-5743-407f-98ac-0683c475570c": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "9b949aa1-4eb6-4d64-9b06-1809cdc0f1ff": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "e46f1292-d706-4e61-9cd3-a19c79f1e5e6": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "8de20068-26fb-47f3-b025-2f86145aad59": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "d9d59f61-a6ec-46eb-b8e8-a4199d0b44be": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "3350dd56-e13e-4f0b-b0c1-2d642149d9e9": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "a9f22c49-4090-4ddd-814b-cc062f5ba1ae": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "4ad5b982-c00d-4a64-ba0a-40d839551639": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                },
+                "dc5b3b05-3394-4c65-a337-c7a4a6ce4cea": {
+                    "deps": [
+                        "ad863684-20e2-4a4c-ab7c-26115d94c8b0"
+                    ]
+                }
+            },
+            "resource_ids": {
+                "localhost:5129": "local_tm"
+            },
+            "resources": [
+                "localhost:5129"
+            ],
+            "allocations": {
+                "05a4f0b0-2da5-4527-9b0e-50a908e885f5": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "bef522d6-54a6-4f8f-9b2e-8d2ca0bc25f6": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "0fdef835-c5d9-4e7e-8d71-e9a21bcba614": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "67da9a6b-d8b7-431d-8d81-ee5d785b70d1": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "60af6f1d-b08a-45ea-bdc2-6adae8133203": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "1c54787c-1347-4815-a32e-d6db858a6ac8": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "25b1c2ad-75c0-4dcf-aeb2-0332103d0e9d": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "10102572-6a18-423c-83fd-9505e73783df": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "5c1f9fc4-c947-493b-839c-cc5d9dc4e647": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "f1af6201-bc8d-433c-b3b8-e93f2b83ac81": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "cb6df1f4-3c09-4228-ba5b-fa7ce02231a4": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "6c8a6a10-f794-4469-9289-54168b263395": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "7ee686de-a46c-4351-9a68-3ad350b7880e": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "02420b52-9474-4a46-bdbd-ab1d9d1e1f20": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "adc1462c-0dd7-499d-8619-897ca5b3ae02": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "4a7102ca-4772-4990-a7eb-d6c0a2ee1479": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "dfb313d4-5743-407f-98ac-0683c475570c": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "9b949aa1-4eb6-4d64-9b06-1809cdc0f1ff": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "e46f1292-d706-4e61-9cd3-a19c79f1e5e6": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "8de20068-26fb-47f3-b025-2f86145aad59": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "d9d59f61-a6ec-46eb-b8e8-a4199d0b44be": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "3350dd56-e13e-4f0b-b0c1-2d642149d9e9": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "a9f22c49-4090-4ddd-814b-cc062f5ba1ae": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "4ad5b982-c00d-4a64-ba0a-40d839551639": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                },
+                "dc5b3b05-3394-4c65-a337-c7a4a6ce4cea": {
+                    "time_slot": 0,
+                    "resource": "localhost:5129"
+                }
+            },
+            "timestamp": 1624991642
+        }
+    ]
+}

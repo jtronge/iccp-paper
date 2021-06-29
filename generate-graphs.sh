@@ -75,3 +75,8 @@ python ./scripts/task_execution_time.py \
 	--title "HPC + Google Compute Engine" \
 	profiles/hpc-cloud-workflow-2021-06-28.json \
 	> graphs/hpc-cloud-workflow-2021-06-28.svg
+
+python ./scripts/task_execution_time.py \
+	--title "BLAST HPC Only Run" \
+	profiles/blast-run-one-resource-2021-06-29.json \
+	> graphs/blast-run-one-resource-2021-06-29.svg

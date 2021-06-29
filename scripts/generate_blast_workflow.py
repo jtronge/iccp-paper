@@ -184,8 +184,8 @@ bee_steps = {
             'class': 'CommandLineTool',
             'hints': {
                 'DockerRequirement': {'dockerImageId': CH_CTR},
-                'Push': {'fnames': '|'.join([os.path.dirname(DB_NAME)])},
-                'Pull': {'fnames': '|'.join([os.path.basename(REF_SEQUENCE)])},
+                'Push': {'files': '|'.join([os.path.dirname(DB_NAME)])},
+                'Pull': {'files': '|'.join([os.path.basename(REF_SEQUENCE)])},
             },
             'inputs': {'sequence_file': {'type': 'string'}},
             'outputs': {'db_dir': {'type': 'string'}},
@@ -233,8 +233,8 @@ for seq_path in os.listdir(SEQUENCE_DIR):
             'class': 'CommandLineTool',
             'hints': {
                 'DockerRequirement': {'dockerImageId': CH_CTR},
-                'Push': {'fnames': '|'.join([f'{task_name}.reference'])},
-                'Pull': {'fnames': '|'.join([os.path.dirname(DB_NAME), seq_path])}
+                'Push': {'files': '|'.join([f'{task_name}.reference'])},
+                'Pull': {'files': '|'.join([os.path.dirname(DB_NAME), seq_path])}
             },
             'inputs': {'db_dir': {'type': 'string'}},
             'outputs': {'out': {'type': 'string'}},
