@@ -90,6 +90,8 @@ python ./scripts/run_graph_new_scheduler.py \
 
 python ./scripts/task_execution_time.py \
 	--title "HPC-Only (Darwin) BLAST Run" \
+	--width 1100 \
+	--graph-width 800 \
 	--height 1200 \
 	--graph-height 1000 \
 	profiles/darwin-long-wait-hpc-only.json \
