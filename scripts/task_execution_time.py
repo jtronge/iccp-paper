@@ -21,13 +21,6 @@ height = args.height
 graph_width = args.graph_width
 graph_height = args.graph_height
 
-#if len(sys.argv) != 2:
-#    print('Usage: %s [WORKFLOW PROFILE]' % (sys.argv[0],), file=sys.stderr)
-#    sys.exit(1)
-
-# Read in the workflow profile
-#with open(sys.argv[1]) as fp:
-#    wfl = json.load(fp)
 with open(args.workflow_profile) as fp:
     wfl = json.load(fp)
 
@@ -39,10 +32,6 @@ start_time = min(sc['timestamp'] for sc in wfl['state_changes'])
 end_time = max(sc['timestamp'] for sc in wfl['state_changes'])
 total_time = end_time - start_time
 
-#width = 800
-#height = 500
-#graph_width = 600
-#graph_height = 200
 left_padding = 10
 right_padding = 10
 top_padding = 10
@@ -64,13 +53,17 @@ for sc in wfl['state_changes']:
 for name in task_state_changes:
     task_state_changes[name].sort(key=lambda sc: sc['timestamp'])
 
+# Set some values based on the input profile
+left_label_width = max(len(name) * 10 for name in task_state_changes)
+
 # Map task states to fills
 task_states = list(set(sc['next_state'] for sc in wfl['state_changes']))
-fill = svgtool.ScaleOrdinal(domain=task_states, range_=('#ff0000', '#0000ff'))
+fill = svgtool.ScaleOrdinal(domain=task_states, range_=('#0000ff', '#000088', '#004488', '#008844'))
 
 # Create the bar rectangles
 rects = []
 left_labels = []
+gridlines = []
 for name in task_state_changes:
     states = task_state_changes[name]
     y = yscale.scale(name)
@@ -97,6 +90,21 @@ for name in task_state_changes:
                 fill=fill.scale(state),
             )
         )
+    # Add a line
+    path = [
+        svgtool.path_move_to(0, y - 6),
+        svgtool.path_line_to(left_label_width + graph_width, y - 6),
+    ]
+    gridlines.append(svgtool.path(path, 'stroke: #000000; stroke-width: 1px;'))
+
+# Add a vertical gridline
+vertical_path = [
+    svgtool.path_move_to(left_label_width, 0),
+    svgtool.path_line_to(left_label_width, max(yscale.scale(name)
+                                               + yscale.bandwidth
+                                               for name in task_state_changes) + 10)
+]
+gridlines.append(svgtool.path(vertical_path, 'stroke: #000000; stroke-width: 1px;'))
 
 # Create a title
 title = svgtool.text(title, x=width / 4, y=30, style='font-size:20pt;')
@@ -106,11 +114,14 @@ key = []
 task_states = list(task_states)
 task_states.sort()
 task_states.remove('COMPLETED')
+x = 0
 for i, state in enumerate(task_states):
-    x = i * 150
     key.append(svgtool.text(state, x=x, y=20))
-    key.append(svgtool.rect(x=x + len(state) * 12, y=0, width=40, height=40, fill=fill.scale(state)))
+    x += len(state) * 11
+    key.append(svgtool.rect(x=x, y=0, width=40, height=40, fill=fill.scale(state)))
+    x += 60
 key = svgtool.g(transform='translate(120 %i)' % (graph_height + 120,), content=key)
+
 
 # Create the axis and title
 axis = [
@@ -124,11 +135,13 @@ rects_axis = []
 rects_axis.extend(rects)
 rects_axis.append(axis)
 # Slide the bars over to make room for the left labels
-left_label_width = max(len(name) * 10 for name in task_state_changes)
 rects = svgtool.g(transform='translate(%i 0)' % (left_label_width,), content=rects_axis)
 # Add in the left labels
 left_labels = ''.join(left_labels)
-content = svgtool.g(transform='translate(0 50)', content=[left_labels, rects])
+# Add in the grid lines
+gridlines = ''.join(gridlines)
+# Create the content
+content = svgtool.g(transform='translate(0 50)', content=[left_labels, gridlines, rects])
 content = svgtool.g(content=[title, key, content])
 
 print(svgtool.svg(width=width, height=height, content=content))
