@@ -82,3 +82,15 @@ python ./scripts/task_execution_time.py \
 	--graph-height 1000 \
 	profiles/blast-run-one-resource-2021-06-29.json \
 	> graphs/blast-run-one-resource-2021-06-29.svg
+
+python ./scripts/run_graph_new_scheduler.py \
+	--title "Run Graph HPC Only" \
+	profiles/blast-run-one-resource-2021-06-29.json \
+	> graphs/blast-run-one-resource-2021-06-29-run-graph.svg
+
+python ./scripts/task_execution_time.py \
+	--title "HPC-Only (Darwin) BLAST Run" \
+	--height 1200 \
+	--graph-height 1000 \
+	profiles/darwin-long-wait-hpc-only.json \
+	> graphs/darwin-long-wait-hpc-only_run-graph.svg

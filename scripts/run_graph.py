@@ -20,6 +20,11 @@ horizontal_padding = args.padding
 vertical_padding = args.padding
 title = args.title
 
+def err(*pargs):
+    """Print arguments to stderr."""
+    import sys
+    print(*pargs, file=sys.stderr)
+
 def load_profile(profile):
     """Load a workflow profile and return the attributes."""
     # Load the profile
@@ -33,6 +38,7 @@ def load_profile(profile):
         if sc['task_name'] not in task_names:
             task_names.append(sc['task_name'])
             task_to_ids[sc['task_name']] = sc['task_id']
+    err('Task Names', task_names)
 
     # Get the start and end times of each task
     task_start_times = {}
@@ -43,6 +49,7 @@ def load_profile(profile):
             task_start_times[task_name] = sc['timestamp']
         elif sc['next_state'] == 'COMPLETED':
             task_end_times[task_name] = sc['timestamp']
+    err('Task Start Times', task_start_times)
 
     # Get a list of all state change timestamps
     times = [sc['timestamp'] for sc in wfl['state_changes']]
