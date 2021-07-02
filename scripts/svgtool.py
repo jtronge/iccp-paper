@@ -16,7 +16,7 @@ class ScaleLinear:
         fac = (value - self.domain[0]) / (self.domain[1] - self.domain[0])
         return self.range_[0] + fac * (self.range_[1] - self.range_[0])
 
-    def axis_horizontal(self, tick_count=5, label=lambda tick_val: str(tick_val)):
+    def axis_horizontal(self, tick_count=5, label=lambda tick_val: str(tick_val), text_style='font-size: 10pt'):
         """Create a horizontal axis for the given scale."""
         width = self.domain[1] - self.domain[0]
         # Create the initial horizontal line
@@ -30,7 +30,7 @@ class ScaleLinear:
             pos = self.scale(tick_val)
             axis.append('<path d="M{pos},0 L{pos},6" stroke="#000000"></path>'.format(pos=pos))
             # Add the labels
-            axis.append(text(label(tick_val), x=pos - 4, y=20, style='font-size: 10pt'))
+            axis.append(text(label(tick_val), x=pos - 4, y=20, style=text_style))
         return ''.join(axis)
 
 class ScaleBand:

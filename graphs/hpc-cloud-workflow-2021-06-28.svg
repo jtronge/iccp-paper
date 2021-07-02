@@ -2,18 +2,18 @@
 <g transform="None">
 <text x="200" y="30" style="font-size:20pt;">HPC + Google Compute Engine</text>
 <g transform="translate(120 320)">
-<text x="0" y="20" style="">PENDING</text>
-<rect x="77" y="0" width="40" height="40" fill="#0000ff">
+<text x="0" y="28" style="font-size: 15pt;">PENDING</text>
+<rect x="98" y="0" width="40" height="40" fill="#0000ff">
 </rect>
-<text x="137" y="20" style="">RUNNING</text>
-<rect x="214" y="0" width="40" height="40" fill="#004488">
+<text x="158" y="28" style="font-size: 15pt;">RUNNING</text>
+<rect x="256" y="0" width="40" height="40" fill="#004488">
 </rect>
 </g>
 <g transform="translate(0 50)">
-<text x="10" y="117" style="">hpc-task1</text>
-<text x="10" y="27" style="">cloud-task1</text>
-<text x="10" y="162" style="">hpc-task2</text>
-<text x="10" y="72" style="">cloud-task2</text>
+<text x="10" y="117" style="font-size: 14pt;">hpc-task1</text>
+<text x="10" y="27" style="font-size: 14pt;">cloud-task1</text>
+<text x="10" y="162" style="font-size: 14pt;">hpc-task2</text>
+<text x="10" y="72" style="font-size: 14pt;">cloud-task2</text>
 <path d="M0,94 L710,94 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,4 L710,4 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,139 L710,139 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,49 L710,49 " style="stroke: #000000; stroke-width: 1px;" /><path d="M110,0 L110,190 " style="stroke: #000000; stroke-width: 1px;" /><g transform="translate(110 0)">
 <rect x="10" y="100" width="30" height="35" fill="#0000ff">
 </rect>
@@ -33,17 +33,17 @@
 </rect>
 <g transform="translate(0 200)">
 <path d="M10,0 L580,0" stroke="#000000"></path>
-<path d="M10.0,0 L10.0,6" stroke="#000000"></path><text x="6" y="20" style="font-size: 10pt">0</text>
-<path d="M66.99999928474426,0 L66.99999928474426,6" stroke="#000000"></path><text x="62" y="20" style="font-size: 10pt">7</text>
-<path d="M124.00000035762787,0 L124.00000035762787,6" stroke="#000000"></path><text x="120" y="20" style="font-size: 10pt">15</text>
-<path d="M180.99999964237213,0 L180.99999964237213,6" stroke="#000000"></path><text x="176" y="20" style="font-size: 10pt">22</text>
-<path d="M238.00000071525574,0 L238.00000071525574,6" stroke="#000000"></path><text x="234" y="20" style="font-size: 10pt">30</text>
-<path d="M295.0,0 L295.0,6" stroke="#000000"></path><text x="291" y="20" style="font-size: 10pt">38</text>
-<path d="M351.99999928474426,0 L351.99999928474426,6" stroke="#000000"></path><text x="347" y="20" style="font-size: 10pt">45</text>
-<path d="M409.00000035762787,0 L409.00000035762787,6" stroke="#000000"></path><text x="405" y="20" style="font-size: 10pt">53</text>
-<path d="M465.99999964237213,0 L465.99999964237213,6" stroke="#000000"></path><text x="461" y="20" style="font-size: 10pt">60</text>
-<path d="M523.0000007152557,0 L523.0000007152557,6" stroke="#000000"></path><text x="519" y="20" style="font-size: 10pt">68</text>
-<text x="199" y="40" style="">Execution time (s)</text>
+<path d="M10.0,0 L10.0,6" stroke="#000000"></path><text x="6" y="20" style="font-size: 15pt;">0</text>
+<path d="M66.99999928474426,0 L66.99999928474426,6" stroke="#000000"></path><text x="62" y="20" style="font-size: 15pt;">7</text>
+<path d="M124.00000035762787,0 L124.00000035762787,6" stroke="#000000"></path><text x="120" y="20" style="font-size: 15pt;">15</text>
+<path d="M180.99999964237213,0 L180.99999964237213,6" stroke="#000000"></path><text x="176" y="20" style="font-size: 15pt;">22</text>
+<path d="M238.00000071525574,0 L238.00000071525574,6" stroke="#000000"></path><text x="234" y="20" style="font-size: 15pt;">30</text>
+<path d="M295.0,0 L295.0,6" stroke="#000000"></path><text x="291" y="20" style="font-size: 15pt;">38</text>
+<path d="M351.99999928474426,0 L351.99999928474426,6" stroke="#000000"></path><text x="347" y="20" style="font-size: 15pt;">45</text>
+<path d="M409.00000035762787,0 L409.00000035762787,6" stroke="#000000"></path><text x="405" y="20" style="font-size: 15pt;">53</text>
+<path d="M465.99999964237213,0 L465.99999964237213,6" stroke="#000000"></path><text x="461" y="20" style="font-size: 15pt;">60</text>
+<path d="M523.0000007152557,0 L523.0000007152557,6" stroke="#000000"></path><text x="519" y="20" style="font-size: 15pt;">68</text>
+<text x="199" y="50" style="font-size: 18pt;">Execution time (s)</text>
 </g>
 </g>
 </g>

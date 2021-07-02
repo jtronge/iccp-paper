@@ -21,6 +21,9 @@ height = args.height
 graph_width = args.graph_width
 graph_height = args.graph_height
 
+# I print some metrics to stderr, so print the title so I can see which graph they're for
+print('Title:', title, file=sys.stderr)
+
 with open(args.workflow_profile) as fp:
     wfl = json.load(fp)
 
@@ -31,6 +34,9 @@ tasks = set([sc['task_name'] for sc in wfl['state_changes']])
 start_time = min(sc['timestamp'] for sc in wfl['state_changes'])
 end_time = max(sc['timestamp'] for sc in wfl['state_changes'])
 total_time = end_time - start_time
+
+# Print some metrics
+print('Total run time:', total_time, file=sys.stderr)
 
 left_padding = 10
 right_padding = 10
@@ -69,7 +75,7 @@ for name in task_state_changes:
     y = yscale.scale(name)
     bar_height = yscale.bandwidth
     # Add the task label
-    left_labels.append(svgtool.text(name, x=10, y=y + bar_height / 2))
+    left_labels.append(svgtool.text(name, x=10, y=y + bar_height / 2, style='font-size: 14pt;'))
     # Add bars for each state
     for i, sc in enumerate(states):
         # Determine the x and  y values
@@ -79,7 +85,7 @@ for name in task_state_changes:
         bar_width = xscale.scale(next_time) - x
         state = sc['next_state']
         if state == 'COMPLETED':
-            # Don't do anything here
+            # Ignore completed states
             continue
         rects.append(
             svgtool.rect(
@@ -97,6 +103,15 @@ for name in task_state_changes:
     ]
     gridlines.append(svgtool.path(path, 'stroke: #000000; stroke-width: 1px;'))
 
+# Determine the average PENDING time
+pending_times = [task_state_changes[name][i + 1]['timestamp'] - sc['timestamp']
+                 for name in task_state_changes
+                 for i, sc in enumerate(task_state_changes[name])
+                 # for i, sc in enumerate(states)
+                 if sc['next_state'] == 'PENDING' and i < (len(task_state_changes[name]) - 1)]
+average_pending_time = sum(pending_times) / len(pending_times)
+print('Average pending time:', average_pending_time, file=sys.stderr)
+
 # Add a vertical gridline
 vertical_path = [
     svgtool.path_move_to(left_label_width, 0),
@@ -113,20 +128,23 @@ title = svgtool.text(title, x=width / 4, y=30, style='font-size:20pt;')
 key = []
 task_states = list(task_states)
 task_states.sort()
+# COMPLETED doesn't need to be shown
 task_states.remove('COMPLETED')
 x = 0
 for i, state in enumerate(task_states):
-    key.append(svgtool.text(state, x=x, y=20))
-    x += len(state) * 11
+    key.append(svgtool.text(state, x=x, y=28, style='font-size: 15pt;'))
+    x += len(state) * 14
     key.append(svgtool.rect(x=x, y=0, width=40, height=40, fill=fill.scale(state)))
     x += 60
 key = svgtool.g(transform='translate(120 %i)' % (graph_height + 120,), content=key)
 
-
 # Create the axis and title
 axis = [
-    xscale.axis_horizontal(tick_count=10, label=lambda tick_val: '%i' % (tick_val - start_time,)),
-    svgtool.text('Execution time (s)', x=xscale.scale(start_time + total_time / 3), y=40),
+    xscale.axis_horizontal(tick_count=10, label=lambda tick_val: '%i' % (tick_val - start_time,),
+                           text_style='font-size: 15pt;'),
+    svgtool.text('Execution time (s)',
+                 x=xscale.scale(start_time + total_time / 3), y=50,
+                 style='font-size: 18pt;'),
 ]
 axis = svgtool.g(transform='translate(0 %i)' % (graph_height,), content=axis)
 
