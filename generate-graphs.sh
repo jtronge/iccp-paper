@@ -101,4 +101,9 @@ python ./scripts/run_graph_sleep_wfl.py \
 	profiles/sleep-workflow-google-1.json \
 	profiles/sleep-workflow-google-chameleon-2.json \
 	profiles/sleep-workflow-google-chameleon-4.json \
-	> graphs/test.svg
+	> graphs/test-sleep-with-nums.svg
+python ./scripts/run_graph_with_colors.py \
+	profiles/one-node-google.json \
+	profiles/two-node-chameleon-google.json \
+	profiles/four-node-profile-chameleon-google.json \
+	> graphs/test-with-colors.svg
