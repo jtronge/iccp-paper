@@ -93,9 +93,10 @@ def svg(width, height, content=''):
         '</svg>\n'
     ])
 
-def rect(x, y, width, height, fill=None, content=''):
+def rect(x, y, width, height, fill=None, content='', style=None):
     """Return a new SVG rect element."""
     attrs = 'fill="%s"' % (fill,) if fill is not None else ''
+    attrs += ' style="%s"' % (style,) if style is not None else ''
     return ''.join([
         '<rect x="%i" y="%i" width="%i" height="%i" %s>\n'
         % (x, y, width, height, attrs),
