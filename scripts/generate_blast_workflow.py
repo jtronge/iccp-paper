@@ -1,5 +1,5 @@
 
-"""Workflow generator for ICCP code."""
+"""Workflow generator for ICPP code."""
 
 import argparse
 import datetime
@@ -8,14 +8,12 @@ import os
 import re
 import sys
 import time
-#import yaml
 import ruamel.yaml as yaml
 
 parser = argparse.ArgumentParser(description='workflow generator')
 parser.add_argument('--output-dir', default='workflows')
 parser.add_argument('--prefix', default='workflow1')
 parser.add_argument('--sequence-dir', default='data')
-parser.add_argument('--workdir', default='/home/jaket')
 parser.add_argument('--db-name', default='databases/reference')
 parser.add_argument('--ref-sequence', default='carAur01.sm.fa')
 parser.add_argument('--docker-ctr', default='ncbi/blast',
@@ -27,7 +25,6 @@ args = parser.parse_args()
 OUTPUT_DIR = args.output_dir
 PREFIX = args.prefix
 SEQUENCE_DIR = args.sequence_dir
-WORKDIR = args.workdir
 DB_NAME = args.db_name
 REF_SEQUENCE = args.ref_sequence
 DOCKER_CTR = args.docker_ctr
@@ -55,19 +52,13 @@ steps = {
         'run': {
             'baseCommand': [
                 'makeblastdb',
-                #'-title',
-                #'reference',
                 '-dbtype',
                 'nucl',
-                # '-out',
-                #'databases/reference',
             ],
             'class': 'CommandLineTool',
             'arguments': [
                 {
-                    # 'shellQuote': False,
                     'prefix': '-out',
-                    # 'valueFrom': '-out $("databases/" + inputs.db_title)',
                     'valueFrom': '$("databases/" + inputs.db_title)',
                 },
             ],
@@ -123,12 +114,6 @@ steps = {
                 '-outfmt',
                 '0',
             ],
-            #'arguments': [
-            #    {
-            #        # 'shellQuote': False,
-            #        'valueFrom': '-db $(inputs.db_dir + "/" + inputs.db_name)'
-            #    },
-            #],
             'requirements': {
                 'ResourceRequirement': {
                     'tmpdirMin': '10000',
@@ -162,7 +147,6 @@ steps = {
                 'out': {'type': 'stdout'},
             },
             # Save stdout to this file
-            #'stdout': stdout_file,
             'stdout': '$(inputs.seq_file.basename + ".reference")',
         },
         # Make this a scatter workflow
@@ -198,7 +182,11 @@ bee_steps = {
                            'reference -dbtype nucl -out '
                            'databases/reference',
             'class': 'CommandLineTool',
-            'hints': {'DockerRequirement': {'dockerImageId': CH_CTR}},
+            'hints': {
+                'DockerRequirement': {'dockerImageId': CH_CTR},
+                'Push': {'files': '|'.join([os.path.dirname(DB_NAME)])},
+                'Pull': {'files': '|'.join([os.path.basename(REF_SEQUENCE)])},
+            },
             'inputs': {'sequence_file': {'type': 'string'}},
             'outputs': {'db_dir': {'type': 'string'}},
         },
@@ -207,13 +195,14 @@ bee_steps = {
     },
 }
 # Extra BEE requirements
+"""
 extra_requirements = {
     'makeblastdb': {
-        'workdir': WORKDIR,
         'push': [os.path.dirname(DB_NAME)],
         'pull': [os.path.basename(REF_SEQUENCE)],
     }
 }
+"""
 
 # Save files with a date string
 date_str = datetime.datetime.now().strftime('%F')
@@ -243,7 +232,9 @@ for seq_path in os.listdir(SEQUENCE_DIR):
                            f'{task_name}.reference',
             'class': 'CommandLineTool',
             'hints': {
-                'DockerRequirement': {'dockerImageId': CH_CTR}
+                'DockerRequirement': {'dockerImageId': CH_CTR},
+                'Push': {'files': '|'.join([f'{task_name}.reference'])},
+                'Pull': {'files': '|'.join([os.path.dirname(DB_NAME), seq_path])}
             },
             'inputs': {'db_dir': {'type': 'string'}},
             'outputs': {'out': {'type': 'string'}},
@@ -251,16 +242,10 @@ for seq_path in os.listdir(SEQUENCE_DIR):
         'in': {'db_dir': 'makeblastdb/db_dir'},
         'out': ['out'],
     }
-    extra_requirements[task_name] = {
-        'workdir': WORKDIR,
-        'push': [f'{task_name}.reference'],
-        'pull': [os.path.dirname(DB_NAME), seq_path],
-    }
-
-# Write out the tool definition
-#with open(os.path.join(OUTPUT_DIR, tool_fname), 'w') as fp:
-#    print('# Generated on', date_str, file=fp)
-#    yaml.dump(tool, fp)
+    #extra_requirements[task_name] = {
+    #    'push': [f'{task_name}.reference'],
+    #    'pull': [os.path.dirname(DB_NAME), seq_path],
+    #}
 
 # Write the input YAML file
 fname = f'{PREFIX}_{date_str}_inputs.yml'
@@ -287,7 +272,9 @@ with open(os.path.join(OUTPUT_DIR, fname), 'w') as fp:
     print('# -*- mode: YAML; -*-', file=fp)
     print('# Generated on', date_str, file=fp)
     yaml.dump(bee_wfl, fp)
+"""
 # Write the extra requirements file
 fname = f'{PREFIX}_{date_str}_bee.json'
 with open(os.path.join(OUTPUT_DIR, fname), 'w') as fp:
     json.dump(extra_requirements, fp, indent=4)
+"""

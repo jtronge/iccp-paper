@@ -1,6 +1,10 @@
-"""Create a run graph of a workflow profile."""
-import json
+"""Create a run graph of a workflow profile.
+
+This particular script will now really only work with the sleep workflows since
+it relies on the tasks being named with a trailing number."""
 import argparse
+import datetime
+import json
 
 import svgtool
 
@@ -20,11 +24,6 @@ horizontal_padding = args.padding
 vertical_padding = args.padding
 title = args.title
 
-def err(*pargs):
-    """Print arguments to stderr."""
-    import sys
-    print(*pargs, file=sys.stderr)
-
 def load_profile(profile):
     """Load a workflow profile and return the attributes."""
     # Load the profile
@@ -38,7 +37,6 @@ def load_profile(profile):
         if sc['task_name'] not in task_names:
             task_names.append(sc['task_name'])
             task_to_ids[sc['task_name']] = sc['task_id']
-    err('Task Names', task_names)
 
     # Get the start and end times of each task
     task_start_times = {}
@@ -49,7 +47,6 @@ def load_profile(profile):
             task_start_times[task_name] = sc['timestamp']
         elif sc['next_state'] == 'COMPLETED':
             task_end_times[task_name] = sc['timestamp']
-    err('Task Start Times', task_start_times)
 
     # Get a list of all state change timestamps
     times = [sc['timestamp'] for sc in wfl['state_changes']]
@@ -93,7 +90,7 @@ xscale = svgtool.ScaleLinear(domain=(0, max_time), range_=(horizontal_padding, g
 x_start = xscale.scale(0)
 x_end = xscale.scale(max_time)
 
-translate_x = 180
+translate_x = 220
 
 # Create rectangles representing the runtime of each task for each workflow
 content = []
@@ -112,13 +109,17 @@ for i, wfl in enumerate(wfls):
         x = xscale.scale(st)
         y = yscale.scale(task['allocation_id'])
         rect_width = xscale.scale(st + t) - x
-        rect_height = 24
-        rects.append(svgtool.rect(x=x, y=y, width=rect_width, height=rect_height))
+        rect_height = 21
+        # Number the tasks (this is specific to the sleep workflow)
+        number = 'T%s' % (task_name[4:],)
+        rects.append(svgtool.rect(x=x, y=y, width=rect_width, height=rect_height, style='fill:none;stroke-width:4px;stroke:#000000;'))
+        # Add the task number to the graph
+        rects.append(svgtool.text(number, x=x + rect_width / 2, y=y + rect_height - rect_height / 6, style='font-weight:bold;font-size:14pt;font-family:sans-serif;text-anchor:middle;'))
 
     # Increment the y position
     y_pos += len(resource_ids) * 32
     # Append the total time
-    rects.append(svgtool.text('%0.2fs in total' % (wfl['end_time'] - wfl['start_time'],), x=xscale.scale(end_time - start_time), y=y_pos - len(resource_ids) * 16, style='font-size:16pt;'))
+    rects.append(svgtool.text('%0.0fs in total' % (wfl['end_time'] - wfl['start_time'],), x=xscale.scale(end_time - start_time) + 10, y=y_pos - len(resource_ids) * 16, style='font-size:16pt;font-weight:bold;'))
     wfl_content = [svgtool.g(transform=svgtool.translate(translate_x, 0), content=rects)]
     wfl_content.append(svgtool.text('Run %i' % (i,), x=0, y=y_pos - len(resource_ids) * 16, style='font-weight:bold;font-size:20pt;'))
 
@@ -136,5 +137,6 @@ for i, wfl in enumerate(wfls):
 
 # Add a title
 content = [svgtool.g(transform=svgtool.translate(0, 40), content=content)]
-content.append(svgtool.text(title, x=(graph_width + translate_x) / 2.0, y=30, style='font-size:30pt;text-anchor:middle;'))
+print('<!-- Profiles: {} -->'.format(', '.join(args.profiles)))
+print('<!-- Date: {} -->'.format(datetime.datetime.now().strftime('%F')))
 print(svgtool.svg(width=width, height=height, content=content))

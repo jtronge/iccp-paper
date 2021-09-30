@@ -1,6 +1,7 @@
 """Create a run graph of a workflow profile."""
-import json
 import argparse
+import datetime
+import json
 
 import svgtool
 
@@ -20,11 +21,6 @@ horizontal_padding = args.padding
 vertical_padding = args.padding
 title = args.title
 
-def err(*pargs):
-    """Print arguments to stderr."""
-    import sys
-    print(*pargs, file=sys.stderr)
-
 def load_profile(profile):
     """Load a workflow profile and return the attributes."""
     # Load the profile
@@ -38,7 +34,6 @@ def load_profile(profile):
         if sc['task_name'] not in task_names:
             task_names.append(sc['task_name'])
             task_to_ids[sc['task_name']] = sc['task_id']
-    err('Task Names', task_names)
 
     # Get the start and end times of each task
     task_start_times = {}
@@ -49,7 +44,6 @@ def load_profile(profile):
             task_start_times[task_name] = sc['timestamp']
         elif sc['next_state'] == 'COMPLETED':
             task_end_times[task_name] = sc['timestamp']
-    err('Task Start Times', task_start_times)
 
     # Get a list of all state change timestamps
     times = [sc['timestamp'] for sc in wfl['state_changes']]
@@ -113,7 +107,9 @@ for i, wfl in enumerate(wfls):
         y = yscale.scale(task['allocation_id'])
         rect_width = xscale.scale(st + t) - x
         rect_height = 24
-        rects.append(svgtool.rect(x=x, y=y, width=rect_width, height=rect_height))
+        fill = '#ff0000' if task_name == 'makeblastdb' else '#0000ff'
+        rects.append(svgtool.rect(x=x, y=y, width=rect_width,
+                                  height=rect_height, fill=fill))
 
     # Increment the y position
     y_pos += len(resource_ids) * 32
@@ -137,4 +133,6 @@ for i, wfl in enumerate(wfls):
 # Add a title
 content = [svgtool.g(transform=svgtool.translate(0, 40), content=content)]
 content.append(svgtool.text(title, x=(graph_width + translate_x) / 2.0, y=30, style='font-size:30pt;text-anchor:middle;'))
+print('<!-- Profiles: {} -->'.format(', '.join(args.profiles)))
+print('<!-- Date: {} -->'.format(datetime.datetime.now().strftime('%F')))
 print(svgtool.svg(width=width, height=height, content=content))
