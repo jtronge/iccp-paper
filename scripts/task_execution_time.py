@@ -63,8 +63,17 @@ for name in task_state_changes:
 left_label_width = max(len(name) * 10 for name in task_state_changes)
 
 # Map task states to fills
-task_states = list(set(sc['next_state'] for sc in wfl['state_changes']))
-fill = svgtool.ScaleOrdinal(domain=task_states, range_=('#0000ff', '#000088', '#004488', '#008844'))
+# task_states = set(sc['next_state'] for sc in wfl['state_changes'])
+# Only care about PENDING and RUNNING
+task_states = set(['PENDING', 'RUNNING'])
+# fill = svgtool.ScaleOrdinal(domain=task_states, range_=('#0000ff', '#000088', '#004488', '#008844'))
+def fill(state):
+    """Give a fill color for the state."""
+    if state == 'RUNNING':
+        return '#0000ff'
+    elif state == 'PENDING':
+        return '#ff0000'
+    return '#000000'
 
 # Create the bar rectangles
 rects = []
@@ -84,8 +93,8 @@ for name in task_state_changes:
                      else end_time)
         bar_width = xscale.scale(next_time) - x
         state = sc['next_state']
-        if state == 'COMPLETED':
-            # Ignore completed states
+        if state not in task_states:
+            # Ignore states we don't care about
             continue
         rects.append(
             svgtool.rect(
@@ -93,7 +102,7 @@ for name in task_state_changes:
                 y=y,
                 width=bar_width,
                 height=bar_height,
-                fill=fill.scale(state),
+                fill=fill(state),
             )
         )
     # Add a line
@@ -128,15 +137,13 @@ title = svgtool.text(title, x=width / 4, y=30, style='font-size:20pt;')
 key = []
 task_states = list(task_states)
 task_states.sort()
-# COMPLETED doesn't need to be shown
-task_states.remove('COMPLETED')
 x = 0
 for i, state in enumerate(task_states):
     key.append(svgtool.text(state, x=x, y=28, style='font-size: 15pt;'))
     x += len(state) * 14
-    key.append(svgtool.rect(x=x, y=0, width=40, height=40, fill=fill.scale(state)))
+    key.append(svgtool.rect(x=x, y=0, width=40, height=40, fill=fill(state)))
     x += 60
-key = svgtool.g(transform='translate(120 %i)' % (graph_height + 120,), content=key)
+key = svgtool.g(transform='translate(200 %i)' % (graph_height + 120,), content=key)
 
 # Create the axis and title
 axis = [

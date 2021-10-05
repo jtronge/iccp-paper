@@ -91,6 +91,7 @@ translate_x = 180
 
 # Create rectangles representing the runtime of each task for each workflow
 content = []
+content.append(svgtool.defs(content=[svgtool.pattern(id_='box-pattern', pattern_units=svgtool.PatternUnits.USER_SPACE_ON_USE, x=0, y=0, width=40, height=4, content=svgtool.path(d=[svgtool.path_move_to(0, 1), svgtool.path_horizontal_line_to(40)], style='stroke-width:2px;stroke:#000000;'))]))
 y_pos = 0
 for i, wfl in enumerate(wfls):
     start_time = wfl['start_time']
@@ -107,14 +108,15 @@ for i, wfl in enumerate(wfls):
         y = yscale.scale(task['allocation_id'])
         rect_width = xscale.scale(st + t) - x
         rect_height = 24
-        fill = '#ff0000' if task_name == 'makeblastdb' else '#0000ff'
+        fill = 'url(#box-pattern)' if task_name == 'makeblastdb' else '#000000'
+        style = 'stroke:#000000;stroke-width:1px;' if task_name == 'makeblastdb' else 'stroke:none;'
         rects.append(svgtool.rect(x=x, y=y, width=rect_width,
-                                  height=rect_height, fill=fill))
+                                  height=rect_height, fill=fill, style=style))
 
     # Increment the y position
     y_pos += len(resource_ids) * 32
     # Append the total time
-    rects.append(svgtool.text('%0.2fs in total' % (wfl['end_time'] - wfl['start_time'],), x=xscale.scale(end_time - start_time), y=y_pos - len(resource_ids) * 16, style='font-size:16pt;'))
+    rects.append(svgtool.text('%0.0fs in total' % (wfl['end_time'] - wfl['start_time'],), x=xscale.scale(end_time - start_time), y=y_pos - len(resource_ids) * 16, style='font-size:16pt;font-weight:bold;'))
     wfl_content = [svgtool.g(transform=svgtool.translate(translate_x, 0), content=rects)]
     wfl_content.append(svgtool.text('Run %i' % (i,), x=0, y=y_pos - len(resource_ids) * 16, style='font-weight:bold;font-size:20pt;'))
 
@@ -130,9 +132,22 @@ for i, wfl in enumerate(wfls):
     # Add a lower bar
     content.append(g)
 
+x_pos = 15
+key = []
+key_elm = []
+key_elm.append(svgtool.rect(x=x_pos, y=y_pos+30, width=40, height=30))
+key_elm.append(svgtool.text('scatter task', x=x_pos+50, y=y_pos+50, style='font-size:16pt;'))
+key.append(svgtool.g(transform=svgtool.translate(300, 0), content=key_elm))
+key_elm = []
+key_elm.append(svgtool.rect(x=x_pos, y=y_pos+30, width=40, height=30, fill='url(#box-pattern)', style='stroke-width:2px;stroke:#000000;'))
+key_elm.append(svgtool.text('"makeblastdb" task', x=x_pos+50, y=y_pos+50, style='font-size:16pt;'))
+key.append(svgtool.g(transform=svgtool.translate(10, 0), content=key_elm))
+content.append(''.join(key))
+
 # Add a title
 content = [svgtool.g(transform=svgtool.translate(0, 40), content=content)]
 content.append(svgtool.text(title, x=(graph_width + translate_x) / 2.0, y=30, style='font-size:30pt;text-anchor:middle;'))
+
 print('<!-- Profiles: {} -->'.format(', '.join(args.profiles)))
 print('<!-- Date: {} -->'.format(datetime.datetime.now().strftime('%F')))
 print(svgtool.svg(width=width, height=height, content=content))

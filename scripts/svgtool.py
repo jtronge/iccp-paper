@@ -84,6 +84,26 @@ class ScaleOrdinal:
         i = self.domain.index(value) % len(self.range_)
         return self.range_[i]
 
+def defs(content):
+    """Return SVG defs element."""
+    return ''.join([
+        '<defs>\n',
+        ''.join(content),
+        '</defs>\n',
+    ])
+
+class PatternUnits:
+    USER_SPACE_ON_USE = 'userSpaceOnUse'
+
+def pattern(id_, pattern_units, x, y, width, height, content=''):
+    """Return a pattern element."""
+    return ''.join([
+        ('<pattern id="%s" patternUnits="%s" x="%i" y="%i" width="%i" height="%i">\n'
+         % (id_, pattern_units, x, y, width, height)),
+        ''.join(content),
+        '</pattern>\n',
+    ])
+
 def svg(width, height, content=''):
     """Return an SVG document with the width, height and content."""
     return ''.join([
@@ -102,6 +122,12 @@ def rect(x, y, width, height, fill=None, content='', style=None):
         % (x, y, width, height, attrs),
         ''.join(content),
         '</rect>\n',
+    ])
+
+def circle(cx, cy, r):
+    """Return a new SVG circle element."""
+    return ''.join([
+        '<circle cx="%i" cy="%i" r="%i" />' % (cx, cy, r)
     ])
 
 def g(transform=None, content=''):
@@ -127,6 +153,14 @@ def path_move_to(x, y):
 def path_line_to(x, y):
     """SVG path line to command."""
     return 'L%i,%i ' % (x, y)
+
+def path_vertical_line_to(y):
+    """SVG path vertical line to command."""
+    return 'V%i' % (y,)
+
+def path_horizontal_line_to(y):
+    """SVG path vertical line to command."""
+    return 'H%i' % (y,)
 
 def translate(x, y):
     """Return a translate() transform."""
