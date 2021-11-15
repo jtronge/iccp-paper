@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1200">
+<g transform="None">
+<text x="275" y="30" style="font-size:20pt;">HPC (Darwin) + 4 Google Cloud Nodes</text>
+<g transform="translate(200 1120)">
+<text x="0" y="28" style="font-size: 15pt;">PENDING</text>
+<rect x="98" y="0" width="40" height="40" fill="#ff0000">
+</rect>
+<text x="158" y="28" style="font-size: 15pt;">RUNNING</text>
+<rect x="256" y="0" width="40" height="40" fill="#0000ff">
+</rect>
+</g>
+<g transform="translate(0 50)">
+<text x="10" y="23" style="font-size: 14pt;">makeblastdb</text>
+<text x="10" y="287" style="font-size: 14pt;">task-NC_009064-fasta</text>
+<text x="10" y="551" style="font-size: 14pt;">task-NC_011169-fasta</text>
+<text x="10" y="966" style="font-size: 14pt;">task-NC_018815-fasta</text>
+<text x="10" y="174" style="font-size: 14pt;">task-NC_009060-fasta</text>
+<text x="10" y="476" style="font-size: 14pt;">task-NC_010205-fasta</text>
+<text x="10" y="363" style="font-size: 14pt;">task-NC_009066-fasta</text>
+<text x="10" y="626" style="font-size: 14pt;">task-NC_011171-fasta</text>
+<text x="10" y="61" style="font-size: 14pt;">task-NC_009057-fasta</text>
+<text x="10" y="589" style="font-size: 14pt;">task-NC_011170-fasta</text>
+<text x="10" y="664" style="font-size: 14pt;">task-NC_011177-fasta</text>
+<text x="10" y="890" style="font-size: 14pt;">task-NC_013750-fasta</text>
+<text x="10" y="928" style="font-size: 14pt;">task-NC_018814-fasta</text>
+<text x="10" y="513" style="font-size: 14pt;">task-NC_011168-fasta</text>
+<text x="10" y="136" style="font-size: 14pt;">task-NC_009059-fasta</text>
+<text x="10" y="777" style="font-size: 14pt;">task-NC_013564-fasta</text>
+<text x="10" y="438" style="font-size: 14pt;">task-NC_009459-fasta</text>
+<text x="10" y="99" style="font-size: 14pt;">task-NC_009058-fasta</text>
+<text x="10" y="815" style="font-size: 14pt;">task-NC_013577-fasta</text>
+<text x="10" y="853" style="font-size: 14pt;">task-NC_013663-fasta</text>
+<text x="10" y="702" style="font-size: 14pt;">task-NC_011179-fasta</text>
+<text x="10" y="250" style="font-size: 14pt;">task-NC_009063-fasta</text>
+<text x="10" y="400" style="font-size: 14pt;">task-NC_009067-fasta</text>
+<text x="10" y="325" style="font-size: 14pt;">task-NC_009065-fasta</text>
+<text x="10" y="212" style="font-size: 14pt;">task-NC_009062-fasta</text>
+<text x="10" y="740" style="font-size: 14pt;">task-NC_012055-fasta</text>
+<path d="M0,4 L1000,4 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,267 L1000,267 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,531 L1000,531 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,946 L1000,946 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,154 L1000,154 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,456 L1000,456 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,343 L1000,343 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,607 L1000,607 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,41 L1000,41 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,569 L1000,569 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,644 L1000,644 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,870 L1000,870 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,908 L1000,908 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,494 L1000,494 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,117 L1000,117 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,757 L1000,757 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,418 L1000,418 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,79 L1000,79 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,795 L1000,795 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,833 L1000,833 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,682 L1000,682 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,230 L1000,230 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,380 L1000,380 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,305 L1000,305 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,192 L1000,192 " style="stroke: #000000; stroke-width: 1px;" /><path d="M0,720 L1000,720 " style="stroke: #000000; stroke-width: 1px;" /><path d="M200,0 L200,990 " style="stroke: #000000; stroke-width: 1px;" /><g transform="translate(200 0)">
+<rect x="10" y="10" width="28" height="27" fill="#ff0000">
+</rect>
+<rect x="38" y="10" width="216" height="27" fill="#0000ff">
+</rect>
+<rect x="266" y="273" width="52" height="27" fill="#ff0000">
+</rect>
+<rect x="318" y="273" width="44" height="27" fill="#0000ff">
+</rect>
+<rect x="266" y="537" width="56" height="27" fill="#ff0000">
+</rect>
+<rect x="322" y="537" width="40" height="27" fill="#0000ff">
+</rect>
+<rect x="270" y="952" width="52" height="27" fill="#ff0000">
+</rect>
+<rect x="322" y="952" width="44" height="27" fill="#0000ff">
+</rect>
+<rect x="270" y="160" width="96" height="27" fill="#ff0000">
+</rect>
+<rect x="366" y="160" width="72" height="27" fill="#0000ff">
+</rect>
+<rect x="274" y="462" width="92" height="27" fill="#ff0000">
+</rect>
+<rect x="366" y="462" width="76" height="27" fill="#0000ff">
+</rect>
+<rect x="274" y="349" width="92" height="27" fill="#ff0000">
+</rect>
+<rect x="366" y="349" width="76" height="27" fill="#0000ff">
+</rect>
+<rect x="278" y="613" width="88" height="27" fill="#ff0000">
+</rect>
+<rect x="366" y="613" width="80" height="27" fill="#0000ff">
+</rect>
+<rect x="282" y="47" width="88" height="27" fill="#ff0000">
+</rect>
+<rect x="370" y="47" width="76" height="27" fill="#0000ff">
+</rect>
+<rect x="282" y="575" width="88" height="27" fill="#ff0000">
+</rect>
+<rect x="370" y="575" width="76" height="27" fill="#0000ff">
+</rect>
+<rect x="286" y="650" width="84" height="27" fill="#ff0000">
+</rect>
+<rect x="370" y="650" width="80" height="27" fill="#0000ff">
+</rect>
+<rect x="286" y="876" width="84" height="27" fill="#ff0000">
+</rect>
+<rect x="370" y="876" width="80" height="27" fill="#0000ff">
+</rect>
+<rect x="290" y="914" width="80" height="27" fill="#ff0000">
+</rect>
+<rect x="370" y="914" width="84" height="27" fill="#0000ff">
+</rect>
+<rect x="290" y="500" width="84" height="27" fill="#ff0000">
+</rect>
+<rect x="374" y="500" width="80" height="27" fill="#0000ff">
+</rect>
+<rect x="294" y="123" width="80" height="27" fill="#ff0000">
+</rect>
+<rect x="374" y="123" width="80" height="27" fill="#0000ff">
+</rect>
+<rect x="298" y="763" width="76" height="27" fill="#ff0000">
+</rect>
+<rect x="374" y="763" width="84" height="27" fill="#0000ff">
+</rect>
+<rect x="298" y="424" width="80" height="27" fill="#ff0000">
+</rect>
+<rect x="378" y="424" width="80" height="27" fill="#0000ff">
+</rect>
+<rect x="330" y="85" width="16" height="27" fill="#ff0000">
+</rect>
+<rect x="346" y="85" width="140" height="27" fill="#0000ff">
+</rect>
+<rect x="334" y="801" width="16" height="27" fill="#ff0000">
+</rect>
+<rect x="350" y="801" width="100" height="27" fill="#0000ff">
+</rect>
+<rect x="354" y="839" width="0" height="27" fill="#ff0000">
+</rect>
+<rect x="354" y="839" width="164" height="27" fill="#0000ff">
+</rect>
+<rect x="358" y="688" width="16" height="27" fill="#ff0000">
+</rect>
+<rect x="374" y="688" width="140" height="27" fill="#0000ff">
+</rect>
+<rect x="455" y="236" width="16" height="27" fill="#ff0000">
+</rect>
+<rect x="471" y="236" width="100" height="27" fill="#0000ff">
+</rect>
+<rect x="487" y="386" width="20" height="27" fill="#ff0000">
+</rect>
+<rect x="507" y="386" width="100" height="27" fill="#0000ff">
+</rect>
+<rect x="519" y="311" width="16" height="27" fill="#ff0000">
+</rect>
+<rect x="535" y="311" width="124" height="27" fill="#0000ff">
+</rect>
+<rect x="607" y="198" width="20" height="27" fill="#ff0000">
+</rect>
+<rect x="627" y="198" width="100" height="27" fill="#0000ff">
+</rect>
+<rect x="659" y="726" width="16" height="27" fill="#ff0000">
+</rect>
+<rect x="675" y="726" width="104" height="27" fill="#0000ff">
+</rect>
+<g transform="translate(0 1000)">
+<path d="M10,0 L780,0" stroke="#000000"></path>
+<path d="M10.0,0 L10.0,6" stroke="#000000"></path><text x="6" y="20" style="font-size: 15pt;">0</text>
+<path d="M87.00000019123158,0 L87.00000019123158,6" stroke="#000000"></path><text x="83" y="20" style="font-size: 15pt;">19</text>
+<path d="M164.00000038246316,0 L164.00000038246316,6" stroke="#000000"></path><text x="160" y="20" style="font-size: 15pt;">38</text>
+<path d="M240.99999961753687,0 L240.99999961753687,6" stroke="#000000"></path><text x="236" y="20" style="font-size: 15pt;">57</text>
+<path d="M317.9999998087684,0 L317.9999998087684,6" stroke="#000000"></path><text x="313" y="20" style="font-size: 15pt;">76</text>
+<path d="M395.0,0 L395.0,6" stroke="#000000"></path><text x="391" y="20" style="font-size: 15pt;">96</text>
+<path d="M472.00000019123155,0 L472.00000019123155,6" stroke="#000000"></path><text x="468" y="20" style="font-size: 15pt;">115</text>
+<path d="M549.0000003824632,0 L549.0000003824632,6" stroke="#000000"></path><text x="545" y="20" style="font-size: 15pt;">134</text>
+<path d="M625.9999996175368,0 L625.9999996175368,6" stroke="#000000"></path><text x="621" y="20" style="font-size: 15pt;">153</text>
+<path d="M702.9999998087685,0 L702.9999998087685,6" stroke="#000000"></path><text x="698" y="20" style="font-size: 15pt;">172</text>
+<text x="266" y="50" style="font-size: 18pt;">Execution time (s)</text>
+</g>
+</g>
+</g>
+</g>
+</svg>
+
